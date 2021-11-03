@@ -1,0 +1,1614 @@
+                      :-) GROMACS - gmx mdrun, 2020.5 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf      Artem Zhmurov   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2019, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx mdrun, version 2020.5
+Executable:   /usr/local/gromacs/2020.5/bin/gmx
+Data prefix:  /usr/local/gromacs/2020.5
+Working dir:  /media/subin/DATA/CG/V18/gyroid/L9.2/mon80_gly20/T200/minimizer
+Process ID:   714113
+Command line:
+  gmx mdrun -v --deffnm min2
+
+GROMACS version:    2020.5
+Verified release checksum is 4d9aa1b4e69850bc4583c1983ce2e0e3a88250cafb8f30ab0290b4dd4413a41e
+Precision:          single
+Memory model:       64 bit
+MPI library:        thread_mpi
+OpenMP support:     enabled (GMX_OPENMP_MAX_THREADS = 64)
+GPU support:        disabled
+SIMD instructions:  AVX2_256
+FFT library:        fftw-3.3.8-sse2-avx-avx2-avx2_128
+RDTSCP usage:       enabled
+TNG support:        enabled
+Hwloc support:      disabled
+Tracing support:    disabled
+C compiler:         /usr/bin/cc GNU 9.3.0
+C compiler flags:   -mavx2 -mfma -fexcess-precision=fast -funroll-all-loops -O3 -DNDEBUG
+C++ compiler:       /usr/bin/c++ GNU 9.3.0
+C++ compiler flags: -mavx2 -mfma -fexcess-precision=fast -funroll-all-loops -fopenmp -O3 -DNDEBUG
+
+
+Running on 1 node with total 8 cores, 16 logical cores
+Hardware detected:
+  CPU info:
+    Vendor: Intel
+    Brand:  Intel(R) Xeon(R) Silver 4208 CPU @ 2.10GHz
+    Family: 6   Model: 85   Stepping: 7
+    Features: aes apic avx avx2 avx512f avx512cd avx512bw avx512vl clfsh cmov cx8 cx16 f16c fma htt intel lahf mmx msr nonstop_tsc pcid pclmuldq pdcm pdpe1gb popcnt pse rdrnd rdtscp sse2 sse3 sse4.1 sse4.2 ssse3 tdt x2apic
+    Number of AVX-512 FMA units: 1 (AVX2 is faster w/o 2 AVX-512 FMA units)
+  Hardware topology: Basic
+    Sockets, cores, and logical processors:
+      Socket  0: [   0   8] [   1   9] [   2  10] [   3  11] [   4  12] [   5  13] [   6  14] [   7  15]
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+M. J. Abraham, T. Murtola, R. Schulz, S. Páll, J. C. Smith, B. Hess, E.
+Lindahl
+GROMACS: High performance molecular simulations through multi-level
+parallelism from laptops to supercomputers
+SoftwareX 1 (2015) pp. 19-25
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Páll, M. J. Abraham, C. Kutzner, B. Hess, E. Lindahl
+Tackling Exascale Software Challenges in Molecular Dynamics Simulations with
+GROMACS
+In S. Markidis & E. Laure (Eds.), Solving Software Challenges for Exascale 8759 (2015) pp. 3-27
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+S. Pronk, S. Páll, R. Schulz, P. Larsson, P. Bjelkmar, R. Apostolov, M. R.
+Shirts, J. C. Smith, P. M. Kasson, D. van der Spoel, B. Hess, and E. Lindahl
+GROMACS 4.5: a high-throughput and highly parallel open source molecular
+simulation toolkit
+Bioinformatics 29 (2013) pp. 845-54
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+B. Hess and C. Kutzner and D. van der Spoel and E. Lindahl
+GROMACS 4: Algorithms for highly efficient, load-balanced, and scalable
+molecular simulation
+J. Chem. Theory Comput. 4 (2008) pp. 435-447
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+D. van der Spoel, E. Lindahl, B. Hess, G. Groenhof, A. E. Mark and H. J. C.
+Berendsen
+GROMACS: Fast, Flexible and Free
+J. Comp. Chem. 26 (2005) pp. 1701-1719
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+E. Lindahl and B. Hess and D. van der Spoel
+GROMACS 3.0: A package for molecular simulation and trajectory analysis
+J. Mol. Mod. 7 (2001) pp. 306-317
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+H. J. C. Berendsen, D. van der Spoel and R. van Drunen
+GROMACS: A message-passing parallel molecular dynamics implementation
+Comp. Phys. Comm. 91 (1995) pp. 43-56
+-------- -------- --- Thank You --- -------- --------
+
+
+++++ PLEASE CITE THE DOI FOR THIS VERSION OF GROMACS ++++
+https://doi.org/10.5281/zenodo.4420785
+-------- -------- --- Thank You --- -------- --------
+
+Input Parameters:
+   integrator                     = steep
+   tinit                          = 0
+   dt                             = 0.001
+   nsteps                         = -1
+   init-step                      = 0
+   simulation-part                = 1
+   comm-mode                      = Linear
+   nstcomm                        = 100
+   bd-fric                        = 0
+   ld-seed                        = -1077944354
+   emtol                          = 10
+   emstep                         = 0.01
+   niter                          = 20
+   fcstep                         = 0
+   nstcgsteep                     = 1000
+   nbfgscorr                      = 10
+   rtpi                           = 0.05
+   nstxout                        = 0
+   nstvout                        = 0
+   nstfout                        = 0
+   nstlog                         = 10
+   nstcalcenergy                  = 100
+   nstenergy                      = 1000
+   nstxout-compressed             = 0
+   compressed-x-precision         = 1000
+   cutoff-scheme                  = Verlet
+   nstlist                        = 10
+   pbc                            = xyz
+   periodic-molecules             = false
+   verlet-buffer-tolerance        = 0.005
+   rlist                          = 1.155
+   coulombtype                    = Reaction-Field
+   coulomb-modifier               = Potential-shift
+   rcoulomb-switch                = 0
+   rcoulomb                       = 1.1
+   epsilon-r                      = 10
+   epsilon-rf                     = inf
+   vdw-type                       = Cut-off
+   vdw-modifier                   = Potential-shift
+   rvdw-switch                    = 0
+   rvdw                           = 1.1
+   DispCorr                       = No
+   table-extension                = 1
+   fourierspacing                 = 0.12
+   fourier-nx                     = 0
+   fourier-ny                     = 0
+   fourier-nz                     = 0
+   pme-order                      = 4
+   ewald-rtol                     = 1e-05
+   ewald-rtol-lj                  = 0.001
+   lj-pme-comb-rule               = Geometric
+   ewald-geometry                 = 0
+   epsilon-surface                = 0
+   tcoupl                         = No
+   nsttcouple                     = -1
+   nh-chain-length                = 0
+   print-nose-hoover-chain-variables = false
+   pcoupl                         = No
+   pcoupltype                     = Isotropic
+   nstpcouple                     = -1
+   tau-p                          = 1
+   compressibility (3x3):
+      compressibility[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compressibility[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      compressibility[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   ref-p (3x3):
+      ref-p[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref-p[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      ref-p[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   refcoord-scaling               = No
+   posres-com (3):
+      posres-com[0]= 0.00000e+00
+      posres-com[1]= 0.00000e+00
+      posres-com[2]= 0.00000e+00
+   posres-comB (3):
+      posres-comB[0]= 0.00000e+00
+      posres-comB[1]= 0.00000e+00
+      posres-comB[2]= 0.00000e+00
+   QMMM                           = false
+   QMconstraints                  = 0
+   QMMMscheme                     = 0
+   MMChargeScaleFactor            = 1
+qm-opts:
+   ngQM                           = 0
+   constraint-algorithm           = Lincs
+   continuation                   = false
+   Shake-SOR                      = false
+   shake-tol                      = 0.0001
+   lincs-order                    = 4
+   lincs-iter                     = 1
+   lincs-warnangle                = 30
+   nwall                          = 0
+   wall-type                      = 9-3
+   wall-r-linpot                  = -1
+   wall-atomtype[0]               = -1
+   wall-atomtype[1]               = -1
+   wall-density[0]                = 0
+   wall-density[1]                = 0
+   wall-ewald-zfac                = 3
+   pull                           = false
+   awh                            = false
+   rotation                       = false
+   interactiveMD                  = false
+   disre                          = No
+   disre-weighting                = Conservative
+   disre-mixed                    = false
+   dr-fc                          = 1000
+   dr-tau                         = 0
+   nstdisreout                    = 100
+   orire-fc                       = 0
+   orire-tau                      = 0
+   nstorireout                    = 100
+   free-energy                    = yes
+   init-lambda                    = -1
+   init-lambda-state              = 2
+   delta-lambda                   = 0
+   nstdhdl                        = 50
+   n-lambdas                      = 9
+   separate-dvdl:
+       fep-lambdas =   TRUE
+      mass-lambdas =   FALSE
+      coul-lambdas =   FALSE
+       vdw-lambdas =   FALSE
+    bonded-lambdas =   FALSE
+ restraint-lambdas =   FALSE
+temperature-lambdas =   FALSE
+all-lambdas:
+       fep-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+      mass-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+      coul-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+       vdw-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+    bonded-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+ restraint-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+temperature-lambdas =          0.6         0.7         0.8        0.85         0.9        0.94        0.98        0.99           1
+   calc-lambda-neighbors          = 1
+   dhdl-print-energy              = no
+   sc-alpha                       = 0.5
+   sc-power                       = 1
+   sc-r-power                     = 6
+   sc-sigma                       = 0.3
+   sc-sigma-min                   = 0.3
+   sc-coul                        = true
+   dh-hist-size                   = 0
+   dh-hist-spacing                = 0.1
+   separate-dhdl-file             = yes
+   dhdl-derivatives               = yes
+   cos-acceleration               = 0
+   deform (3x3):
+      deform[    0]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    1]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+      deform[    2]={ 0.00000e+00,  0.00000e+00,  0.00000e+00}
+   simulated-tempering            = false
+   swapcoords                     = no
+   userint1                       = 0
+   userint2                       = 0
+   userint3                       = 0
+   userint4                       = 0
+   userreal1                      = 0
+   userreal2                      = 0
+   userreal3                      = 0
+   userreal4                      = 0
+   applied-forces:
+     electric-field:
+       x:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       y:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+       z:
+         E0                       = 0
+         omega                    = 0
+         t0                       = 0
+         sigma                    = 0
+     density-guided-simulation:
+       active                     = false
+       group                      = protein
+       similarity-measure         = inner-product
+       atom-spreading-weight      = unity
+       force-constant             = 1e+09
+       gaussian-transform-spreading-width = 0.2
+       gaussian-transform-spreading-range-in-multiples-of-width = 4
+       reference-density-filename = reference.mrc
+       nst                        = 1
+       normalize-densities        = true
+       adaptive-force-scaling     = false
+       adaptive-force-scaling-time-constant = 4
+grpopts:
+   nrdf:       26787
+   ref-t:           0
+   tau-t:           0
+annealing:          No
+annealing-npoints:           0
+   acc:	           0           0           0
+   nfreeze:           N           N           N
+   energygrp-flags[  0]: 0
+
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 16 OpenMP threads 
+
+System total charge, top. A: -940.000 top. B: 0.000
+Reaction-Field:
+epsRF = 0, rc = 1.1, krf = 0.375657, crf = 1.36364, epsfac = 13.8935
+The electrostatics potential has its minimum at r = 1.1
+Potential shift: LJ r^-12: -3.186e-01 r^-6: -5.645e-01
+
+Using SIMD 4x8 nonbonded short-range kernels
+
+Using a 4x8 pair-list setup:
+  updated every 10 steps, buffer 0.055 nm, rlist 1.155 nm
+
+Using full Lennard-Jones parameter combination matrix
+
+There are 17 atoms and 1880 charges for free energy perturbation
+Removing pbc first time
+
+Note that activating steepest-descent energy minimization via the integrator .mdp option and the command gmx mdrun may be available in a different form in a future version of GROMACS, e.g. gmx minimize and an .mdp option.
+Initiating Steepest Descents
+Initial vector of lambda components:[     0.8000     0.8000     0.8000     0.8000     0.8000     0.8000     0.8000 ]
+Started Steepest Descents on rank 0 Wed Nov  3 17:38:55 2021
+
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+01
+   Number of steps    =           -1
+           Step           Time
+              0        0.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    4.87799e+03    6.06845e+03    2.92934e+05   -2.92816e+04    5.83396e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80433e+05    8.59884e+02    4.74480e+06
+
+           Step           Time
+              1        1.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.39947e+03    6.23629e+03    2.91747e+05   -2.92271e+04    6.05394e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80209e+05    7.02078e+02    4.74086e+06
+
+           Step           Time
+              2        2.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.52591e+03    6.30384e+03    2.91478e+05   -2.92014e+04    6.04246e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80148e+05    6.52139e+02    4.74000e+06
+
+           Step           Time
+              3        3.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.62786e+03    6.33981e+03    2.91236e+05   -2.91992e+04    6.11390e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80118e+05    6.18383e+02    4.73914e+06
+
+           Step           Time
+              4        4.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.68127e+03    6.36717e+03    2.91143e+05   -2.91896e+04    6.09950e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80101e+05    5.96536e+02    4.73882e+06
+
+           Step           Time
+              5        5.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.72984e+03    6.38490e+03    2.91010e+05   -2.91907e+04    6.14915e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80084e+05    5.77824e+02    4.73832e+06
+
+           Step           Time
+              6        6.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.75700e+03    6.39889e+03    2.90969e+05   -2.91849e+04    6.13336e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80073e+05    5.65798e+02    4.73818e+06
+
+           Step           Time
+              7        7.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.79094e+03    6.41117e+03    2.90875e+05   -2.91869e+04    6.17553e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80066e+05    5.51510e+02    4.73780e+06
+
+           Step           Time
+              8        8.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.80612e+03    6.41944e+03    2.90863e+05   -2.91820e+04    6.15720e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80064e+05    5.44260e+02    4.73772e+06
+
+           Step           Time
+              9        9.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.83377e+03    6.42901e+03    2.90780e+05   -2.91846e+04    6.20011e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80058e+05    5.32396e+02    4.73732e+06
+
+           Step           Time
+             10       10.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.84015e+03    6.43277e+03    2.90770e+05   -2.91797e+04    6.17620e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.80039e+05    5.32650e+02    4.73664e+06
+
+           Step           Time
+             11       11.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.86340e+03    6.43660e+03    2.90142e+05   -2.91817e+04    6.21114e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.79471e+05    5.40565e+02    4.72787e+06
+
+           Step           Time
+             12       12.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.89195e+03    6.43544e+03    2.89781e+05   -2.91814e+04    6.20787e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.79135e+05    5.60338e+02    4.72132e+06
+
+           Step           Time
+             13       13.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    5.95526e+03    6.43483e+03    2.89068e+05   -2.91809e+04    6.20429e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.78481e+05    5.37154e+02    4.71507e+06
+
+           Step           Time
+             14       14.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05288e+03    6.43904e+03    2.88834e+05   -2.91809e+04    6.20703e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.78352e+05    5.33453e+02    4.71219e+06
+
+           Step           Time
+             15       15.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05581e+03    6.44123e+03    2.88356e+05   -2.91810e+04    6.21044e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77882e+05    5.38720e+02    4.70590e+06
+
+           Step           Time
+             16       16.00000
+
+           Step           Time
+             17       17.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05035e+03    6.44073e+03    2.88126e+05   -2.91811e+04    6.21179e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77648e+05    5.29981e+02    4.70406e+06
+
+           Step           Time
+             18       18.00000
+
+           Step           Time
+             19       19.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05396e+03    6.44248e+03    2.88012e+05   -2.91811e+04    6.21329e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77541e+05    5.22921e+02    4.70340e+06
+
+           Step           Time
+             20       20.00000
+
+           Step           Time
+             21       21.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.04750e+03    6.44274e+03    2.87975e+05   -2.91811e+04    6.21512e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77499e+05    5.18677e+02    4.70326e+06
+
+           Step           Time
+             22       22.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.04911e+03    6.44496e+03    2.87957e+05   -2.91810e+04    6.21774e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77488e+05    5.15874e+02    4.70316e+06
+
+           Step           Time
+             23       23.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.04407e+03    6.44577e+03    2.87954e+05   -2.91810e+04    6.22052e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77483e+05    5.12909e+02    4.70321e+06
+
+           Step           Time
+             24       24.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05299e+03    6.44833e+03    2.87928e+05   -2.91810e+04    6.22294e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77471e+05    5.10230e+02    4.70303e+06
+
+           Step           Time
+             25       25.00000
+
+           Step           Time
+             26       26.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05004e+03    6.44852e+03    2.87882e+05   -2.91810e+04    6.22472e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77424e+05    5.05922e+02    4.70283e+06
+
+           Step           Time
+             27       27.00000
+
+           Step           Time
+             28       28.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.04870e+03    6.45094e+03    2.87867e+05   -2.91809e+04    6.22846e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77414e+05    5.02169e+02    4.70277e+06
+
+           Step           Time
+             29       29.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05000e+03    6.45269e+03    2.87855e+05   -2.91808e+04    6.23202e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77409e+05    4.98765e+02    4.70272e+06
+
+           Step           Time
+             30       30.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05533e+03    6.45482e+03    2.87836e+05   -2.91807e+04    6.23492e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77401e+05    4.95685e+02    4.70264e+06
+
+           Step           Time
+             31       31.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.05384e+03    6.45624e+03    2.87833e+05   -2.91807e+04    6.23839e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77400e+05    4.92720e+02    4.70264e+06
+
+           Step           Time
+             32       32.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06323e+03    6.45846e+03    2.87814e+05   -2.91807e+04    6.24120e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77396e+05    4.89693e+02    4.70253e+06
+
+           Step           Time
+             33       33.00000
+
+           Step           Time
+             34       34.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06038e+03    6.45904e+03    2.87792e+05   -2.91807e+04    6.24308e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77374e+05    4.86934e+02    4.70244e+06
+
+           Step           Time
+             35       35.00000
+
+           Step           Time
+             36       36.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06204e+03    6.46152e+03    2.87777e+05   -2.91806e+04    6.24748e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77367e+05    4.82883e+02    4.70237e+06
+
+           Step           Time
+             37       37.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06277e+03    6.46301e+03    2.87768e+05   -2.91805e+04    6.25087e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77364e+05    4.79872e+02    4.70233e+06
+
+           Step           Time
+             38       38.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06815e+03    6.46484e+03    2.87753e+05   -2.91805e+04    6.25397e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77359e+05    4.76864e+02    4.70226e+06
+
+           Step           Time
+             39       39.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.06618e+03    6.46611e+03    2.87748e+05   -2.91805e+04    6.25713e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77357e+05    4.74313e+02    4.70224e+06
+
+           Step           Time
+             40       40.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.07428e+03    6.46783e+03    2.87732e+05   -2.91805e+04    6.26003e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77354e+05    4.71418e+02    4.70217e+06
+
+           Step           Time
+             41       41.00000
+
+           Step           Time
+             42       42.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.07157e+03    6.46838e+03    2.87719e+05   -2.91804e+04    6.26169e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77340e+05    4.69484e+02    4.70212e+06
+
+           Step           Time
+             43       43.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.07619e+03    6.47300e+03    2.87695e+05   -2.91804e+04    6.27159e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77335e+05    4.61215e+02    4.70200e+06
+
+           Step           Time
+             44       44.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.07681e+03    6.47374e+03    2.87687e+05   -2.91804e+04    6.27411e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77332e+05    4.59041e+02    4.70196e+06
+
+           Step           Time
+             45       45.00000
+
+           Step           Time
+             46       46.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08017e+03    6.47447e+03    2.87673e+05   -2.91804e+04    6.27562e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77322e+05    4.57087e+02    4.70190e+06
+
+           Step           Time
+             47       47.00000
+
+           Step           Time
+             48       48.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.07880e+03    6.47595e+03    2.87664e+05   -2.91805e+04    6.27970e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77318e+05    4.53911e+02    4.70186e+06
+
+           Step           Time
+             49       49.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08296e+03    6.47658e+03    2.87654e+05   -2.91805e+04    6.28152e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77315e+05    4.52043e+02    4.70181e+06
+
+           Step           Time
+             50       50.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08125e+03    6.47802e+03    2.87650e+05   -2.91805e+04    6.28577e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77315e+05    4.48958e+02    4.70178e+06
+
+           Step           Time
+             51       51.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08671e+03    6.47861e+03    2.87639e+05   -2.91805e+04    6.28753e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77312e+05    4.46969e+02    4.70172e+06
+
+           Step           Time
+             52       52.00000
+
+           Step           Time
+             53       53.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08481e+03    6.47921e+03    2.87633e+05   -2.91807e+04    6.28950e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77305e+05    4.45488e+02    4.70170e+06
+
+           Step           Time
+             54       54.00000
+
+           Step           Time
+             55       55.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08681e+03    6.47967e+03    2.87628e+05   -2.91807e+04    6.29101e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77305e+05    4.44100e+02    4.70167e+06
+
+           Step           Time
+             56       56.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08715e+03    6.48114e+03    2.87617e+05   -2.91807e+04    6.29608e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77301e+05    4.40185e+02    4.70161e+06
+
+           Step           Time
+             57       57.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09010e+03    6.48154e+03    2.87609e+05   -2.91807e+04    6.29763e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77298e+05    4.38716e+02    4.70157e+06
+
+           Step           Time
+             58       58.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.08909e+03    6.48253e+03    2.87602e+05   -2.91808e+04    6.30165e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77295e+05    4.35940e+02    4.70150e+06
+
+           Step           Time
+             59       59.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09306e+03    6.48276e+03    2.87592e+05   -2.91809e+04    6.30311e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77290e+05    4.34602e+02    4.70141e+06
+
+           Step           Time
+             60       60.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09148e+03    6.48302e+03    2.87578e+05   -2.91809e+04    6.30532e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77277e+05    4.33903e+02    4.70117e+06
+
+           Step           Time
+             61       61.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09355e+03    6.48288e+03    2.87536e+05   -2.91809e+04    6.30624e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77238e+05    4.35137e+02    4.70050e+06
+
+           Step           Time
+             62       62.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09484e+03    6.48263e+03    2.87431e+05   -2.91809e+04    6.30668e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.77135e+05    4.39411e+02    4.69877e+06
+
+           Step           Time
+             63       63.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.09737e+03    6.48235e+03    2.87203e+05   -2.91809e+04    6.30691e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76909e+05    4.45648e+02    4.69541e+06
+
+           Step           Time
+             64       64.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.10206e+03    6.48210e+03    2.86904e+05   -2.91810e+04    6.30710e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76614e+05    4.46297e+02    4.69186e+06
+
+           Step           Time
+             65       65.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.11059e+03    6.48194e+03    2.86736e+05   -2.91810e+04    6.30742e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76455e+05    4.41028e+02    4.69048e+06
+
+           Step           Time
+             66       66.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13055e+03    6.48253e+03    2.86659e+05   -2.91810e+04    6.30900e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76400e+05    4.34667e+02    4.69011e+06
+
+           Step           Time
+             67       67.00000
+
+           Step           Time
+             68       68.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12529e+03    6.48413e+03    2.86641e+05   -2.91811e+04    6.31263e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76382e+05    4.30710e+02    4.69004e+06
+
+           Step           Time
+             69       69.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13338e+03    6.48509e+03    2.86624e+05   -2.91811e+04    6.31522e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76376e+05    4.27565e+02    4.68996e+06
+
+           Step           Time
+             70       70.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12556e+03    6.48561e+03    2.86626e+05   -2.91814e+04    6.31879e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76375e+05    4.25372e+02    4.68996e+06
+
+           Step           Time
+             71       71.00000
+
+           Step           Time
+             72       72.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13160e+03    6.48632e+03    2.86605e+05   -2.91814e+04    6.32023e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76362e+05    4.22720e+02    4.68986e+06
+
+           Step           Time
+             73       73.00000
+
+           Step           Time
+             74       74.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12686e+03    6.48649e+03    2.86598e+05   -2.91816e+04    6.32450e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76354e+05    4.19705e+02    4.68983e+06
+
+           Step           Time
+             75       75.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13146e+03    6.48766e+03    2.86588e+05   -2.91816e+04    6.32659e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76352e+05    4.17416e+02    4.68978e+06
+
+           Step           Time
+             76       76.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12917e+03    6.48729e+03    2.86586e+05   -2.91818e+04    6.32902e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76350e+05    4.15881e+02    4.68977e+06
+
+           Step           Time
+             77       77.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13322e+03    6.48875e+03    2.86577e+05   -2.91818e+04    6.33115e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76349e+05    4.13738e+02    4.68973e+06
+
+           Step           Time
+             78       78.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13003e+03    6.48798e+03    2.86579e+05   -2.91819e+04    6.33306e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76348e+05    4.12845e+02    4.68973e+06
+
+           Step           Time
+             79       79.00000
+
+           Step           Time
+             80       80.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13353e+03    6.48873e+03    2.86564e+05   -2.91820e+04    6.33412e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76339e+05    4.11021e+02    4.68967e+06
+
+           Step           Time
+             81       81.00000
+
+           Step           Time
+             82       82.00000
+
+           Step           Time
+             83       83.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13178e+03    6.48885e+03    2.86564e+05   -2.91820e+04    6.33522e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76338e+05    4.10292e+02    4.68967e+06
+
+           Step           Time
+             84       84.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13345e+03    6.48915e+03    2.86558e+05   -2.91821e+04    6.33722e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76336e+05    4.08655e+02    4.68964e+06
+
+           Step           Time
+             85       85.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13145e+03    6.48940e+03    2.86557e+05   -2.91822e+04    6.33852e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76334e+05    4.07809e+02    4.68963e+06
+
+           Step           Time
+             86       86.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13423e+03    6.48960e+03    2.86553e+05   -2.91823e+04    6.34002e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76334e+05    4.06475e+02    4.68960e+06
+
+           Step           Time
+             87       87.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13135e+03    6.48991e+03    2.86552e+05   -2.91823e+04    6.34144e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76332e+05    4.05641e+02    4.68960e+06
+
+           Step           Time
+             88       88.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13546e+03    6.49004e+03    2.86546e+05   -2.91824e+04    6.34273e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76331e+05    4.04352e+02    4.68956e+06
+
+           Step           Time
+             89       89.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13117e+03    6.49041e+03    2.86548e+05   -2.91825e+04    6.34422e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76331e+05    4.03659e+02    4.68957e+06
+
+           Step           Time
+             90       90.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13729e+03    6.49048e+03    2.86539e+05   -2.91825e+04    6.34540e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76329e+05    4.02301e+02    4.68953e+06
+
+           Step           Time
+             91       91.00000
+
+           Step           Time
+             92       92.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13386e+03    6.49069e+03    2.86538e+05   -2.91826e+04    6.34616e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76326e+05    4.01754e+02    4.68952e+06
+
+           Step           Time
+             93       93.00000
+
+           Step           Time
+             94       94.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13515e+03    6.49094e+03    2.86532e+05   -2.91827e+04    6.34822e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76324e+05    4.00176e+02    4.68949e+06
+
+           Step           Time
+             95       95.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13331e+03    6.49116e+03    2.86531e+05   -2.91827e+04    6.34925e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76322e+05    3.99534e+02    4.68948e+06
+
+           Step           Time
+             96       96.00000
+
+           Step           Time
+             97       97.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13477e+03    6.49124e+03    2.86527e+05   -2.91827e+04    6.35000e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76321e+05    3.98839e+02    4.68947e+06
+
+           Step           Time
+             98       98.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13313e+03    6.49175e+03    2.86524e+05   -2.91829e+04    6.35298e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76319e+05    3.96884e+02    4.68944e+06
+
+           Step           Time
+             99       99.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13559e+03    6.49180e+03    2.86519e+05   -2.91830e+04    6.35370e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76317e+05    3.96106e+02    4.68942e+06
+
+           Step           Time
+            100      100.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13303e+03    6.49229e+03    2.86517e+05   -2.91832e+04    6.35625e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76315e+05    3.94631e+02    4.68941e+06
+
+           Step           Time
+            101      101.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13675e+03    6.49229e+03    2.86510e+05   -2.91832e+04    6.35696e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76313e+05    3.93699e+02    4.68937e+06
+
+           Step           Time
+            102      102.00000
+
+           Step           Time
+            103      103.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13459e+03    6.49252e+03    2.86510e+05   -2.91833e+04    6.35803e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76312e+05    3.93130e+02    4.68937e+06
+
+           Step           Time
+            104      104.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13722e+03    6.49259e+03    2.86506e+05   -2.91833e+04    6.35916e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76312e+05    3.92144e+02    4.68935e+06
+
+           Step           Time
+            105      105.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13434e+03    6.49285e+03    2.86506e+05   -2.91835e+04    6.36029e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76310e+05    3.91619e+02    4.68934e+06
+
+           Step           Time
+            106      106.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13808e+03    6.49287e+03    2.86500e+05   -2.91836e+04    6.36131e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76309e+05    3.90659e+02    4.68931e+06
+
+           Step           Time
+            107      107.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13385e+03    6.49317e+03    2.86502e+05   -2.91835e+04    6.36249e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76308e+05    3.90292e+02    4.68931e+06
+
+           Step           Time
+            108      108.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13924e+03    6.49311e+03    2.86495e+05   -2.91837e+04    6.36342e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76307e+05    3.89285e+02    4.68927e+06
+
+           Step           Time
+            109      109.00000
+
+           Step           Time
+            110      110.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13589e+03    6.49327e+03    2.86493e+05   -2.91837e+04    6.36402e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76303e+05    3.89025e+02    4.68926e+06
+
+           Step           Time
+            111      111.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13637e+03    6.49331e+03    2.86488e+05   -2.91838e+04    6.36530e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76299e+05    3.88423e+02    4.68918e+06
+
+           Step           Time
+            112      112.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13430e+03    6.49335e+03    2.86481e+05   -2.91839e+04    6.36600e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76291e+05    3.88674e+02    4.68904e+06
+
+           Step           Time
+            113      113.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13364e+03    6.49329e+03    2.86463e+05   -2.91839e+04    6.36640e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76272e+05    3.89663e+02    4.68869e+06
+
+           Step           Time
+            114      114.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13233e+03    6.49324e+03    2.86414e+05   -2.91839e+04    6.36662e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76222e+05    3.92261e+02    4.68784e+06
+
+           Step           Time
+            115      115.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13084e+03    6.49321e+03    2.86296e+05   -2.91839e+04    6.36673e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.76103e+05    3.97682e+02    4.68585e+06
+
+           Step           Time
+            116      116.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12935e+03    6.49325e+03    2.86043e+05   -2.91839e+04    6.36681e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.75848e+05    4.06188e+02    4.68196e+06
+
+           Step           Time
+            117      117.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12826e+03    6.49343e+03    2.85640e+05   -2.91839e+04    6.36687e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.75445e+05    4.13452e+02    4.67649e+06
+
+           Step           Time
+            118      118.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.12835e+03    6.49384e+03    2.85179e+05   -2.91839e+04    6.36693e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74984e+05    4.15232e+02    4.67090e+06
+
+           Step           Time
+            119      119.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.13129e+03    6.49467e+03    2.84826e+05   -2.91839e+04    6.36701e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74635e+05    4.08585e+02    4.66753e+06
+
+           Step           Time
+            120      120.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.14682e+03    6.49567e+03    2.84690e+05   -2.91840e+04    6.36740e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74516e+05    3.99602e+02    4.66678e+06
+
+           Step           Time
+            121      121.00000
+
+           Step           Time
+            122      122.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15207e+03    6.49433e+03    2.84647e+05   -2.91840e+04    6.36784e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74478e+05    3.96306e+02    4.66659e+06
+
+           Step           Time
+            123      123.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15558e+03    6.49587e+03    2.84627e+05   -2.91840e+04    6.36834e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74463e+05    3.94092e+02    4.66649e+06
+
+           Step           Time
+            124      124.00000
+
+           Step           Time
+            125      125.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15850e+03    6.49500e+03    2.84613e+05   -2.91841e+04    6.36903e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74452e+05    3.92601e+02    4.66644e+06
+
+           Step           Time
+            126      126.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15854e+03    6.49627e+03    2.84603e+05   -2.91840e+04    6.36961e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74444e+05    3.91256e+02    4.66640e+06
+
+           Step           Time
+            127      127.00000
+
+           Step           Time
+            128      128.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15933e+03    6.49571e+03    2.84597e+05   -2.91840e+04    6.37055e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74439e+05    3.90306e+02    4.66638e+06
+
+           Step           Time
+            129      129.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15894e+03    6.49671e+03    2.84591e+05   -2.91840e+04    6.37125e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74434e+05    3.89306e+02    4.66635e+06
+
+           Step           Time
+            130      130.00000
+
+           Step           Time
+            131      131.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15933e+03    6.49643e+03    2.84586e+05   -2.91841e+04    6.37235e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74430e+05    3.88453e+02    4.66633e+06
+
+           Step           Time
+            132      132.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15906e+03    6.49723e+03    2.84582e+05   -2.91840e+04    6.37316e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74427e+05    3.87583e+02    4.66631e+06
+
+           Step           Time
+            133      133.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16022e+03    6.49702e+03    2.84576e+05   -2.91841e+04    6.37539e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74425e+05    3.86299e+02    4.66629e+06
+
+           Step           Time
+            134      134.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.15994e+03    6.49820e+03    2.84569e+05   -2.91841e+04    6.37610e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74419e+05    3.85253e+02    4.66626e+06
+
+           Step           Time
+            135      135.00000
+
+           Step           Time
+            136      136.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16053e+03    6.49783e+03    2.84567e+05   -2.91842e+04    6.37768e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74419e+05    3.84387e+02    4.66624e+06
+
+           Step           Time
+            137      137.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16018e+03    6.49876e+03    2.84562e+05   -2.91843e+04    6.37863e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74415e+05    3.83550e+02    4.66622e+06
+
+           Step           Time
+            138      138.00000
+
+           Step           Time
+            139      139.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16101e+03    6.49849e+03    2.84557e+05   -2.91843e+04    6.37975e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74412e+05    3.82886e+02    4.66620e+06
+
+           Step           Time
+            140      140.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16039e+03    6.49918e+03    2.84555e+05   -2.91844e+04    6.38105e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74411e+05    3.82034e+02    4.66619e+06
+
+           Step           Time
+            141      141.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16258e+03    6.49893e+03    2.84551e+05   -2.91846e+04    6.38273e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74410e+05    3.81209e+02    4.66618e+06
+
+           Step           Time
+            142      142.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16139e+03    6.49975e+03    2.84546e+05   -2.91845e+04    6.38362e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74406e+05    3.80337e+02    4.66616e+06
+
+           Step           Time
+            143      143.00000
+
+           Step           Time
+            144      144.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16237e+03    6.49959e+03    2.84542e+05   -2.91847e+04    6.38447e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74404e+05    3.79796e+02    4.66614e+06
+
+           Step           Time
+            145      145.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16148e+03    6.49989e+03    2.84541e+05   -2.91848e+04    6.38600e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74403e+05    3.78952e+02    4.66613e+06
+
+           Step           Time
+            146      146.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16285e+03    6.50006e+03    2.84537e+05   -2.91849e+04    6.38700e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74402e+05    3.78373e+02    4.66611e+06
+
+           Step           Time
+            147      147.00000
+
+           Step           Time
+            148      148.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16312e+03    6.50009e+03    2.84534e+05   -2.91849e+04    6.38761e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74400e+05    3.77828e+02    4.66610e+06
+
+           Step           Time
+            149      149.00000
+
+           Step           Time
+            150      150.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16192e+03    6.50031e+03    2.84533e+05   -2.91851e+04    6.38856e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74398e+05    3.77460e+02    4.66609e+06
+
+           Step           Time
+            151      151.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16380e+03    6.50033e+03    2.84529e+05   -2.91851e+04    6.38916e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74398e+05    3.76924e+02    4.66608e+06
+
+           Step           Time
+            152      152.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16178e+03    6.50058e+03    2.84529e+05   -2.91852e+04    6.39010e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74396e+05    3.76623e+02    4.66608e+06
+
+           Step           Time
+            153      153.00000
+
+           Step           Time
+            154      154.00000
+
+           Step           Time
+            155      155.00000
+
+           Step           Time
+            156      156.00000
+
+           Step           Time
+            157      157.00000
+
+           Step           Time
+            158      158.00000
+
+           Step           Time
+            159      159.00000
+
+           Step           Time
+            160      160.00000
+
+   Energies (kJ/mol)
+           Bond       G96Angle        LJ (SR)   Coulomb (SR) Position Rest.
+    6.16180e+03    6.50058e+03    2.84529e+05   -2.91852e+04    6.39010e+03
+      Potential Pressure (bar)    dVremain/dl
+    2.74396e+05    3.76617e+02    4.66608e+06
+
+           Step           Time
+            161      161.00000
+
+           Step           Time
+            162      162.00000
+
+           Step           Time
+            163      163.00000
+
+           Step           Time
+            164      164.00000
+
+           Step           Time
+            165      165.00000
+
+           Step           Time
+            166      166.00000
+
+           Step           Time
+            167      167.00000
+
+
+Energy minimization has stopped, but the forces have not converged to the
+requested precision Fmax < 10 (which may not be possible for your system). It
+stopped because the algorithm tried to make a new step whose size was too
+small, or there was no change in the energy since last step. Either way, we
+regard the minimization as converged to within the available machine
+precision, given your starting configuration and EM parameters.
+
+Double precision normally gives you higher accuracy, but this is often not
+needed for preparing to run molecular dynamics.
+
+Steepest Descents did not converge to Fmax < 10 in 168 steps.
+Potential Energy  =  2.7439612e+05
+Maximum force     =  1.5672411e+02 on atom 7390
+Norm of force     =  3.0614071e+00
+Finished mdrun on rank 0 Wed Nov  3 17:38:59 2021
+
