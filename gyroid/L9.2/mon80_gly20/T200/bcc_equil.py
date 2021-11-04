@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import sys
-sys.path.append('../../../../scripts')
+sys.path.append('lib/scripts')
 import argparse
 from bcc_build import BicontinuousCubicBuild
 from genmdp import SimulationMdp

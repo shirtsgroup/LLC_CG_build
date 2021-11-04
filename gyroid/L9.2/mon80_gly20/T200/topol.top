@@ -1,11 +1,14 @@
 ;Forcefield
-#include "/media/subin/DATA/CG/V18/scripts/../top/Forcefields/mod_gly_ion.itp"
+#include "lib/Forcefields/mod_gly_ion.itp"
 
 ;ITW Topology
 #include "restrained.itp"
 
 ;ION Topology
-#include "/media/subin/DATA/CG/V18/scripts/../top/topologies/ION.itp"
+#include "lib/topologies/ION.itp"
+
+;GLY Topology
+#include "lib/topologies/GLY.itp"
 
 [ system ]
 Simulation Box
@@ -14,3 +17,4 @@ Simulation Box
 ;Compounds     nmols
 restrained         1
 ION              940
+GLY             1195

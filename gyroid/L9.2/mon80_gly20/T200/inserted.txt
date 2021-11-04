@@ -1,0 +1,1259 @@
+                 :-) GROMACS - gmx insert-molecules, 2019.6 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar      Christian Blau   Viacheslav Bolnykh     Kevin Boyd    
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra       Alan Gray     
+  Gerrit Groenhof     Anca Hamuraru    Vincent Hindriksen  M. Eric Irrgang  
+  Aleksei Iupinov   Christoph Junghans     Joe Jordan     Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul    Viveca Lindahl    Magnus Lundborg     Erik Marklund   
+    Pascal Merz     Pieter Meulenhoff    Teemu Murtola       Szilard Pall   
+    Sander Pronk      Roland Schulz      Michael Shirts    Alexey Shvetsov  
+   Alfons Sijbers     Peter Tieleman      Jon Vincent      Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2018, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx insert-molecules, version 2019.6
+Executable:   /usr/local/gromacs/2019.6/bin/gmx
+Data prefix:  /usr/local/gromacs/2019.6
+Working dir:  /media/subin/DATA/CG/V18/gyroid/L9.2/mon80_gly20/T200
+Command line:
+  gmx insert-molecules -f scaled_1.0000.gro -ci lib/scripts/../topologies/GLY -nmol 1195 -o solvated.gro -scale 0.45
+
+Reading solute configuration
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary.
+
+NOTE: From version 5.0 gmx insert-molecules uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. 68 (1964) pp. 441-451
+-------- -------- --- Thank You --- -------- --------
+
+Using random seed 828541329
+Try 1Try 2Try 3 success (now 8933 atoms)!
+Try 4Try 5 success (now 8936 atoms)!
+Try 6Try 7Try 8 success (now 8939 atoms)!
+Try 9Try 10 success (now 8942 atoms)!
+Try 11 success (now 8945 atoms)!
+Try 12 success (now 8948 atoms)!
+Try 13Try 14 success (now 8951 atoms)!
+Try 15 success (now 8954 atoms)!
+Try 16 success (now 8957 atoms)!
+Try 17Try 18 success (now 8960 atoms)!
+Try 19Try 20Try 21 success (now 8963 atoms)!
+Try 22Try 23 success (now 8966 atoms)!
+Try 24 success (now 8969 atoms)!
+Try 25Try 26 success (now 8972 atoms)!
+Try 27Try 28 success (now 8975 atoms)!
+Try 29 success (now 8978 atoms)!
+Try 30Try 31 success (now 8981 atoms)!
+Try 32 success (now 8984 atoms)!
+Try 33Try 34Try 35Try 36Try 37Try 38Try 39 success (now 8987 atoms)!
+Try 40Try 41Try 42 success (now 8990 atoms)!
+Try 43Try 44 success (now 8993 atoms)!
+Try 45Try 46Try 47 success (now 8996 atoms)!
+Try 48 success (now 8999 atoms)!
+Try 49 success (now 9002 atoms)!
+Try 50Try 51 success (now 9005 atoms)!
+Try 52Try 53 success (now 9008 atoms)!
+Try 54Try 55 success (now 9011 atoms)!
+Try 56Try 57Try 58 success (now 9014 atoms)!
+Try 59 success (now 9017 atoms)!
+Try 60 success (now 9020 atoms)!
+Try 61 success (now 9023 atoms)!
+Try 62 success (now 9026 atoms)!
+Try 63Try 64Try 65 success (now 9029 atoms)!
+Try 66Try 67Try 68 success (now 9032 atoms)!
+Try 69Try 70 success (now 9035 atoms)!
+Try 71Try 72Try 73 success (now 9038 atoms)!
+Try 74 success (now 9041 atoms)!
+Try 75Try 76Try 77Try 78 success (now 9044 atoms)!
+Try 79Try 80Try 81Try 82Try 83 success (now 9047 atoms)!
+Try 84Try 85Try 86Try 87Try 88 success (now 9050 atoms)!
+Try 89Try 90Try 91Try 92 success (now 9053 atoms)!
+Try 93Try 94Try 95 success (now 9056 atoms)!
+Try 96Try 97 success (now 9059 atoms)!
+Try 98Try 99Try 100 success (now 9062 atoms)!
+Try 101Try 102Try 103Try 104 success (now 9065 atoms)!
+Try 105Try 106 success (now 9068 atoms)!
+Try 107Try 108Try 109Try 110Try 111 success (now 9071 atoms)!
+Try 112 success (now 9074 atoms)!
+Try 113 success (now 9077 atoms)!
+Try 114Try 115 success (now 9080 atoms)!
+Try 116 success (now 9083 atoms)!
+Try 117Try 118Try 119 success (now 9086 atoms)!
+Try 120 success (now 9089 atoms)!
+Try 121Try 122 success (now 9092 atoms)!
+Try 123 success (now 9095 atoms)!
+Try 124Try 125Try 126 success (now 9098 atoms)!
+Try 127 success (now 9101 atoms)!
+Try 128 success (now 9104 atoms)!
+Try 129Try 130 success (now 9107 atoms)!
+Try 131 success (now 9110 atoms)!
+Try 132 success (now 9113 atoms)!
+Try 133 success (now 9116 atoms)!
+Try 134 success (now 9119 atoms)!
+Try 135Try 136Try 137 success (now 9122 atoms)!
+Try 138Try 139 success (now 9125 atoms)!
+Try 140 success (now 9128 atoms)!
+Try 141Try 142Try 143 success (now 9131 atoms)!
+Try 144 success (now 9134 atoms)!
+Try 145Try 146 success (now 9137 atoms)!
+Try 147 success (now 9140 atoms)!
+Try 148Try 149 success (now 9143 atoms)!
+Try 150Try 151Try 152 success (now 9146 atoms)!
+Try 153Try 154Try 155 success (now 9149 atoms)!
+Try 156 success (now 9152 atoms)!
+Try 157Try 158Try 159Try 160 success (now 9155 atoms)!
+Try 161Try 162 success (now 9158 atoms)!
+Try 163Try 164Try 165 success (now 9161 atoms)!
+Try 166 success (now 9164 atoms)!
+Try 167 success (now 9167 atoms)!
+Try 168 success (now 9170 atoms)!
+Try 169 success (now 9173 atoms)!
+Try 170Try 171 success (now 9176 atoms)!
+Try 172Try 173 success (now 9179 atoms)!
+Try 174Try 175 success (now 9182 atoms)!
+Try 176Try 177Try 178Try 179Try 180Try 181 success (now 9185 atoms)!
+Try 182Try 183 success (now 9188 atoms)!
+Try 184 success (now 9191 atoms)!
+Try 185Try 186 success (now 9194 atoms)!
+Try 187Try 188 success (now 9197 atoms)!
+Try 189 success (now 9200 atoms)!
+Try 190Try 191 success (now 9203 atoms)!
+Try 192 success (now 9206 atoms)!
+Try 193Try 194Try 195Try 196 success (now 9209 atoms)!
+Try 197Try 198 success (now 9212 atoms)!
+Try 199 success (now 9215 atoms)!
+Try 200 success (now 9218 atoms)!
+Try 201Try 202Try 203 success (now 9221 atoms)!
+Try 204 success (now 9224 atoms)!
+Try 205Try 206Try 207Try 208Try 209Try 210 success (now 9227 atoms)!
+Try 211 success (now 9230 atoms)!
+Try 212 success (now 9233 atoms)!
+Try 213Try 214Try 215 success (now 9236 atoms)!
+Try 216 success (now 9239 atoms)!
+Try 217Try 218Try 219Try 220 success (now 9242 atoms)!
+Try 221 success (now 9245 atoms)!
+Try 222Try 223 success (now 9248 atoms)!
+Try 224Try 225 success (now 9251 atoms)!
+Try 226 success (now 9254 atoms)!
+Try 227Try 228Try 229Try 230Try 231Try 232 success (now 9257 atoms)!
+Try 233 success (now 9260 atoms)!
+Try 234 success (now 9263 atoms)!
+Try 235 success (now 9266 atoms)!
+Try 236 success (now 9269 atoms)!
+Try 237Try 238 success (now 9272 atoms)!
+Try 239Try 240 success (now 9275 atoms)!
+Try 241 success (now 9278 atoms)!
+Try 242 success (now 9281 atoms)!
+Try 243 success (now 9284 atoms)!
+Try 244 success (now 9287 atoms)!
+Try 245Try 246Try 247 success (now 9290 atoms)!
+Try 248 success (now 9293 atoms)!
+Try 249 success (now 9296 atoms)!
+Try 250Try 251 success (now 9299 atoms)!
+Try 252 success (now 9302 atoms)!
+Try 253 success (now 9305 atoms)!
+Try 254Try 255Try 256Try 257Try 258 success (now 9308 atoms)!
+Try 259Try 260Try 261 success (now 9311 atoms)!
+Try 262 success (now 9314 atoms)!
+Try 263Try 264Try 265 success (now 9317 atoms)!
+Try 266Try 267Try 268Try 269Try 270Try 271Try 272Try 273Try 274 success (now 9320 atoms)!
+Try 275 success (now 9323 atoms)!
+Try 276Try 277Try 278 success (now 9326 atoms)!
+Try 279Try 280 success (now 9329 atoms)!
+Try 281 success (now 9332 atoms)!
+Try 282Try 283Try 284Try 285Try 286 success (now 9335 atoms)!
+Try 287 success (now 9338 atoms)!
+Try 288 success (now 9341 atoms)!
+Try 289Try 290Try 291Try 292Try 293Try 294Try 295Try 296Try 297 success (now 9344 atoms)!
+Try 298 success (now 9347 atoms)!
+Try 299 success (now 9350 atoms)!
+Try 300 success (now 9353 atoms)!
+Try 301 success (now 9356 atoms)!
+Try 302 success (now 9359 atoms)!
+Try 303Try 304Try 305Try 306Try 307Try 308Try 309 success (now 9362 atoms)!
+Try 310Try 311Try 312 success (now 9365 atoms)!
+Try 313Try 314Try 315Try 316 success (now 9368 atoms)!
+Try 317 success (now 9371 atoms)!
+Try 318 success (now 9374 atoms)!
+Try 319Try 320 success (now 9377 atoms)!
+Try 321Try 322Try 323Try 324 success (now 9380 atoms)!
+Try 325Try 326Try 327Try 328 success (now 9383 atoms)!
+Try 329 success (now 9386 atoms)!
+Try 330 success (now 9389 atoms)!
+Try 331 success (now 9392 atoms)!
+Try 332 success (now 9395 atoms)!
+Try 333Try 334Try 335Try 336Try 337Try 338Try 339Try 340Try 341 success (now 9398 atoms)!
+Try 342 success (now 9401 atoms)!
+Try 343 success (now 9404 atoms)!
+Try 344Try 345Try 346Try 347Try 348Try 349 success (now 9407 atoms)!
+Try 350Try 351Try 352 success (now 9410 atoms)!
+Try 353Try 354 success (now 9413 atoms)!
+Try 355Try 356Try 357 success (now 9416 atoms)!
+Try 358Try 359Try 360 success (now 9419 atoms)!
+Try 361Try 362 success (now 9422 atoms)!
+Try 363 success (now 9425 atoms)!
+Try 364Try 365 success (now 9428 atoms)!
+Try 366 success (now 9431 atoms)!
+Try 367Try 368Try 369Try 370Try 371Try 372Try 373 success (now 9434 atoms)!
+Try 374 success (now 9437 atoms)!
+Try 375 success (now 9440 atoms)!
+Try 376 success (now 9443 atoms)!
+Try 377Try 378Try 379 success (now 9446 atoms)!
+Try 380Try 381 success (now 9449 atoms)!
+Try 382Try 383Try 384Try 385Try 386Try 387 success (now 9452 atoms)!
+Try 388Try 389Try 390Try 391Try 392Try 393Try 394Try 395 success (now 9455 atoms)!
+Try 396Try 397 success (now 9458 atoms)!
+Try 398 success (now 9461 atoms)!
+Try 399Try 400Try 401Try 402 success (now 9464 atoms)!
+Try 403Try 404Try 405 success (now 9467 atoms)!
+Try 406 success (now 9470 atoms)!
+Try 407Try 408Try 409Try 410Try 411Try 412 success (now 9473 atoms)!
+Try 413 success (now 9476 atoms)!
+Try 414Try 415Try 416Try 417Try 418 success (now 9479 atoms)!
+Try 419Try 420Try 421Try 422Try 423 success (now 9482 atoms)!
+Try 424Try 425 success (now 9485 atoms)!
+Try 426 success (now 9488 atoms)!
+Try 427Try 428 success (now 9491 atoms)!
+Try 429Try 430Try 431Try 432 success (now 9494 atoms)!
+Try 433Try 434 success (now 9497 atoms)!
+Try 435Try 436Try 437 success (now 9500 atoms)!
+Try 438Try 439 success (now 9503 atoms)!
+Try 440Try 441Try 442Try 443Try 444 success (now 9506 atoms)!
+Try 445 success (now 9509 atoms)!
+Try 446Try 447 success (now 9512 atoms)!
+Try 448Try 449Try 450 success (now 9515 atoms)!
+Try 451 success (now 9518 atoms)!
+Try 452Try 453 success (now 9521 atoms)!
+Try 454 success (now 9524 atoms)!
+Try 455Try 456 success (now 9527 atoms)!
+Try 457Try 458 success (now 9530 atoms)!
+Try 459Try 460Try 461 success (now 9533 atoms)!
+Try 462Try 463Try 464 success (now 9536 atoms)!
+Try 465 success (now 9539 atoms)!
+Try 466Try 467Try 468 success (now 9542 atoms)!
+Try 469Try 470Try 471 success (now 9545 atoms)!
+Try 472 success (now 9548 atoms)!
+Try 473 success (now 9551 atoms)!
+Try 474Try 475Try 476Try 477Try 478 success (now 9554 atoms)!
+Try 479 success (now 9557 atoms)!
+Try 480 success (now 9560 atoms)!
+Try 481Try 482Try 483Try 484Try 485Try 486Try 487Try 488Try 489Try 490 success (now 9563 atoms)!
+Try 491 success (now 9566 atoms)!
+Try 492Try 493 success (now 9569 atoms)!
+Try 494 success (now 9572 atoms)!
+Try 495Try 496 success (now 9575 atoms)!
+Try 497Try 498 success (now 9578 atoms)!
+Try 499 success (now 9581 atoms)!
+Try 500Try 501Try 502 success (now 9584 atoms)!
+Try 503 success (now 9587 atoms)!
+Try 504Try 505 success (now 9590 atoms)!
+Try 506 success (now 9593 atoms)!
+Try 507 success (now 9596 atoms)!
+Try 508Try 509Try 510Try 511Try 512Try 513Try 514 success (now 9599 atoms)!
+Try 515Try 516Try 517 success (now 9602 atoms)!
+Try 518 success (now 9605 atoms)!
+Try 519Try 520 success (now 9608 atoms)!
+Try 521 success (now 9611 atoms)!
+Try 522Try 523 success (now 9614 atoms)!
+Try 524 success (now 9617 atoms)!
+Try 525Try 526 success (now 9620 atoms)!
+Try 527 success (now 9623 atoms)!
+Try 528Try 529 success (now 9626 atoms)!
+Try 530Try 531 success (now 9629 atoms)!
+Try 532 success (now 9632 atoms)!
+Try 533 success (now 9635 atoms)!
+Try 534 success (now 9638 atoms)!
+Try 535 success (now 9641 atoms)!
+Try 536 success (now 9644 atoms)!
+Try 537 success (now 9647 atoms)!
+Try 538Try 539Try 540Try 541Try 542 success (now 9650 atoms)!
+Try 543 success (now 9653 atoms)!
+Try 544Try 545Try 546Try 547Try 548Try 549Try 550Try 551Try 552Try 553 success (now 9656 atoms)!
+Try 554Try 555Try 556Try 557Try 558Try 559Try 560 success (now 9659 atoms)!
+Try 561 success (now 9662 atoms)!
+Try 562 success (now 9665 atoms)!
+Try 563Try 564Try 565Try 566Try 567Try 568Try 569Try 570Try 571 success (now 9668 atoms)!
+Try 572Try 573Try 574Try 575Try 576Try 577Try 578 success (now 9671 atoms)!
+Try 579Try 580 success (now 9674 atoms)!
+Try 581Try 582Try 583 success (now 9677 atoms)!
+Try 584 success (now 9680 atoms)!
+Try 585Try 586Try 587Try 588Try 589Try 590Try 591Try 592Try 593 success (now 9683 atoms)!
+Try 594 success (now 9686 atoms)!
+Try 595 success (now 9689 atoms)!
+Try 596Try 597 success (now 9692 atoms)!
+Try 598Try 599Try 600Try 601 success (now 9695 atoms)!
+Try 602Try 603 success (now 9698 atoms)!
+Try 604 success (now 9701 atoms)!
+Try 605Try 606Try 607 success (now 9704 atoms)!
+Try 608 success (now 9707 atoms)!
+Try 609Try 610 success (now 9710 atoms)!
+Try 611Try 612 success (now 9713 atoms)!
+Try 613Try 614Try 615 success (now 9716 atoms)!
+Try 616Try 617Try 618 success (now 9719 atoms)!
+Try 619 success (now 9722 atoms)!
+Try 620Try 621Try 622Try 623Try 624 success (now 9725 atoms)!
+Try 625 success (now 9728 atoms)!
+Try 626 success (now 9731 atoms)!
+Try 627 success (now 9734 atoms)!
+Try 628 success (now 9737 atoms)!
+Try 629 success (now 9740 atoms)!
+Try 630Try 631Try 632 success (now 9743 atoms)!
+Try 633Try 634Try 635Try 636 success (now 9746 atoms)!
+Try 637Try 638 success (now 9749 atoms)!
+Try 639Try 640Try 641Try 642Try 643Try 644 success (now 9752 atoms)!
+Try 645Try 646 success (now 9755 atoms)!
+Try 647 success (now 9758 atoms)!
+Try 648 success (now 9761 atoms)!
+Try 649 success (now 9764 atoms)!
+Try 650 success (now 9767 atoms)!
+Try 651Try 652Try 653Try 654Try 655 success (now 9770 atoms)!
+Try 656 success (now 9773 atoms)!
+Try 657Try 658Try 659 success (now 9776 atoms)!
+Try 660Try 661Try 662 success (now 9779 atoms)!
+Try 663 success (now 9782 atoms)!
+Try 664Try 665Try 666 success (now 9785 atoms)!
+Try 667Try 668Try 669Try 670Try 671Try 672 success (now 9788 atoms)!
+Try 673 success (now 9791 atoms)!
+Try 674 success (now 9794 atoms)!
+Try 675 success (now 9797 atoms)!
+Try 676 success (now 9800 atoms)!
+Try 677Try 678Try 679Try 680 success (now 9803 atoms)!
+Try 681Try 682 success (now 9806 atoms)!
+Try 683Try 684 success (now 9809 atoms)!
+Try 685Try 686 success (now 9812 atoms)!
+Try 687 success (now 9815 atoms)!
+Try 688Try 689Try 690Try 691Try 692Try 693 success (now 9818 atoms)!
+Try 694Try 695 success (now 9821 atoms)!
+Try 696Try 697 success (now 9824 atoms)!
+Try 698Try 699Try 700 success (now 9827 atoms)!
+Try 701Try 702Try 703 success (now 9830 atoms)!
+Try 704 success (now 9833 atoms)!
+Try 705 success (now 9836 atoms)!
+Try 706Try 707Try 708Try 709Try 710Try 711 success (now 9839 atoms)!
+Try 712Try 713Try 714 success (now 9842 atoms)!
+Try 715 success (now 9845 atoms)!
+Try 716 success (now 9848 atoms)!
+Try 717 success (now 9851 atoms)!
+Try 718 success (now 9854 atoms)!
+Try 719Try 720 success (now 9857 atoms)!
+Try 721 success (now 9860 atoms)!
+Try 722 success (now 9863 atoms)!
+Try 723Try 724 success (now 9866 atoms)!
+Try 725 success (now 9869 atoms)!
+Try 726Try 727 success (now 9872 atoms)!
+Try 728 success (now 9875 atoms)!
+Try 729 success (now 9878 atoms)!
+Try 730Try 731Try 732Try 733Try 734Try 735Try 736 success (now 9881 atoms)!
+Try 737Try 738Try 739Try 740Try 741 success (now 9884 atoms)!
+Try 742 success (now 9887 atoms)!
+Try 743Try 744Try 745Try 746Try 747Try 748Try 749Try 750 success (now 9890 atoms)!
+Try 751Try 752Try 753Try 754Try 755Try 756Try 757Try 758Try 759 success (now 9893 atoms)!
+Try 760Try 761Try 762Try 763Try 764Try 765 success (now 9896 atoms)!
+Try 766 success (now 9899 atoms)!
+Try 767Try 768Try 769Try 770 success (now 9902 atoms)!
+Try 771 success (now 9905 atoms)!
+Try 772 success (now 9908 atoms)!
+Try 773 success (now 9911 atoms)!
+Try 774 success (now 9914 atoms)!
+Try 775 success (now 9917 atoms)!
+Try 776 success (now 9920 atoms)!
+Try 777 success (now 9923 atoms)!
+Try 778 success (now 9926 atoms)!
+Try 779 success (now 9929 atoms)!
+Try 780Try 781 success (now 9932 atoms)!
+Try 782Try 783Try 784Try 785Try 786Try 787 success (now 9935 atoms)!
+Try 788 success (now 9938 atoms)!
+Try 789 success (now 9941 atoms)!
+Try 790 success (now 9944 atoms)!
+Try 791Try 792Try 793 success (now 9947 atoms)!
+Try 794Try 795Try 796Try 797 success (now 9950 atoms)!
+Try 798 success (now 9953 atoms)!
+Try 799Try 800Try 801 success (now 9956 atoms)!
+Try 802Try 803Try 804 success (now 9959 atoms)!
+Try 805Try 806Try 807Try 808Try 809Try 810Try 811Try 812Try 813Try 814 success (now 9962 atoms)!
+Try 815 success (now 9965 atoms)!
+Try 816 success (now 9968 atoms)!
+Try 817Try 818Try 819Try 820Try 821 success (now 9971 atoms)!
+Try 822 success (now 9974 atoms)!
+Try 823Try 824Try 825 success (now 9977 atoms)!
+Try 826Try 827 success (now 9980 atoms)!
+Try 828 success (now 9983 atoms)!
+Try 829 success (now 9986 atoms)!
+Try 830Try 831Try 832Try 833Try 834Try 835Try 836Try 837 success (now 9989 atoms)!
+Try 838 success (now 9992 atoms)!
+Try 839 success (now 9995 atoms)!
+Try 840Try 841Try 842Try 843Try 844Try 845 success (now 9998 atoms)!
+Try 846Try 847 success (now 10001 atoms)!
+Try 848Try 849Try 850Try 851 success (now 10004 atoms)!
+Try 852Try 853Try 854 success (now 10007 atoms)!
+Try 855Try 856 success (now 10010 atoms)!
+Try 857Try 858 success (now 10013 atoms)!
+Try 859Try 860 success (now 10016 atoms)!
+Try 861 success (now 10019 atoms)!
+Try 862Try 863 success (now 10022 atoms)!
+Try 864 success (now 10025 atoms)!
+Try 865Try 866 success (now 10028 atoms)!
+Try 867 success (now 10031 atoms)!
+Try 868 success (now 10034 atoms)!
+Try 869 success (now 10037 atoms)!
+Try 870Try 871Try 872Try 873 success (now 10040 atoms)!
+Try 874Try 875Try 876Try 877Try 878Try 879Try 880Try 881Try 882Try 883 success (now 10043 atoms)!
+Try 884 success (now 10046 atoms)!
+Try 885Try 886 success (now 10049 atoms)!
+Try 887Try 888Try 889Try 890Try 891Try 892Try 893Try 894 success (now 10052 atoms)!
+Try 895Try 896Try 897 success (now 10055 atoms)!
+Try 898 success (now 10058 atoms)!
+Try 899Try 900Try 901Try 902Try 903 success (now 10061 atoms)!
+Try 904Try 905 success (now 10064 atoms)!
+Try 906 success (now 10067 atoms)!
+Try 907Try 908 success (now 10070 atoms)!
+Try 909Try 910 success (now 10073 atoms)!
+Try 911 success (now 10076 atoms)!
+Try 912Try 913 success (now 10079 atoms)!
+Try 914 success (now 10082 atoms)!
+Try 915Try 916Try 917 success (now 10085 atoms)!
+Try 918 success (now 10088 atoms)!
+Try 919Try 920 success (now 10091 atoms)!
+Try 921Try 922Try 923Try 924Try 925Try 926 success (now 10094 atoms)!
+Try 927Try 928Try 929Try 930Try 931 success (now 10097 atoms)!
+Try 932Try 933 success (now 10100 atoms)!
+Try 934Try 935Try 936Try 937Try 938 success (now 10103 atoms)!
+Try 939Try 940Try 941Try 942Try 943Try 944 success (now 10106 atoms)!
+Try 945Try 946Try 947 success (now 10109 atoms)!
+Try 948Try 949 success (now 10112 atoms)!
+Try 950 success (now 10115 atoms)!
+Try 951 success (now 10118 atoms)!
+Try 952Try 953 success (now 10121 atoms)!
+Try 954 success (now 10124 atoms)!
+Try 955 success (now 10127 atoms)!
+Try 956 success (now 10130 atoms)!
+Try 957Try 958 success (now 10133 atoms)!
+Try 959Try 960 success (now 10136 atoms)!
+Try 961Try 962Try 963Try 964 success (now 10139 atoms)!
+Try 965Try 966Try 967 success (now 10142 atoms)!
+Try 968 success (now 10145 atoms)!
+Try 969Try 970Try 971Try 972Try 973Try 974Try 975Try 976Try 977 success (now 10148 atoms)!
+Try 978Try 979 success (now 10151 atoms)!
+Try 980Try 981Try 982 success (now 10154 atoms)!
+Try 983Try 984 success (now 10157 atoms)!
+Try 985Try 986Try 987Try 988 success (now 10160 atoms)!
+Try 989Try 990 success (now 10163 atoms)!
+Try 991Try 992Try 993Try 994 success (now 10166 atoms)!
+Try 995Try 996Try 997 success (now 10169 atoms)!
+Try 998Try 999Try 1000 success (now 10172 atoms)!
+Try 1001 success (now 10175 atoms)!
+Try 1002Try 1003Try 1004 success (now 10178 atoms)!
+Try 1005 success (now 10181 atoms)!
+Try 1006Try 1007Try 1008 success (now 10184 atoms)!
+Try 1009 success (now 10187 atoms)!
+Try 1010Try 1011 success (now 10190 atoms)!
+Try 1012 success (now 10193 atoms)!
+Try 1013Try 1014Try 1015Try 1016Try 1017 success (now 10196 atoms)!
+Try 1018Try 1019 success (now 10199 atoms)!
+Try 1020Try 1021Try 1022 success (now 10202 atoms)!
+Try 1023Try 1024Try 1025Try 1026 success (now 10205 atoms)!
+Try 1027Try 1028Try 1029Try 1030Try 1031Try 1032Try 1033Try 1034Try 1035Try 1036 success (now 10208 atoms)!
+Try 1037 success (now 10211 atoms)!
+Try 1038 success (now 10214 atoms)!
+Try 1039 success (now 10217 atoms)!
+Try 1040Try 1041Try 1042 success (now 10220 atoms)!
+Try 1043Try 1044 success (now 10223 atoms)!
+Try 1045 success (now 10226 atoms)!
+Try 1046Try 1047 success (now 10229 atoms)!
+Try 1048Try 1049 success (now 10232 atoms)!
+Try 1050Try 1051Try 1052Try 1053 success (now 10235 atoms)!
+Try 1054Try 1055Try 1056Try 1057 success (now 10238 atoms)!
+Try 1058Try 1059Try 1060Try 1061Try 1062Try 1063Try 1064 success (now 10241 atoms)!
+Try 1065Try 1066Try 1067 success (now 10244 atoms)!
+Try 1068 success (now 10247 atoms)!
+Try 1069Try 1070Try 1071Try 1072Try 1073 success (now 10250 atoms)!
+Try 1074Try 1075Try 1076 success (now 10253 atoms)!
+Try 1077Try 1078Try 1079Try 1080Try 1081Try 1082 success (now 10256 atoms)!
+Try 1083Try 1084Try 1085Try 1086Try 1087 success (now 10259 atoms)!
+Try 1088Try 1089 success (now 10262 atoms)!
+Try 1090 success (now 10265 atoms)!
+Try 1091Try 1092Try 1093 success (now 10268 atoms)!
+Try 1094Try 1095Try 1096Try 1097Try 1098Try 1099Try 1100Try 1101Try 1102Try 1103 success (now 10271 atoms)!
+Try 1104Try 1105Try 1106 success (now 10274 atoms)!
+Try 1107 success (now 10277 atoms)!
+Try 1108Try 1109 success (now 10280 atoms)!
+Try 1110Try 1111Try 1112Try 1113 success (now 10283 atoms)!
+Try 1114Try 1115 success (now 10286 atoms)!
+Try 1116Try 1117Try 1118Try 1119 success (now 10289 atoms)!
+Try 1120Try 1121Try 1122Try 1123Try 1124 success (now 10292 atoms)!
+Try 1125 success (now 10295 atoms)!
+Try 1126Try 1127 success (now 10298 atoms)!
+Try 1128Try 1129Try 1130Try 1131Try 1132Try 1133 success (now 10301 atoms)!
+Try 1134 success (now 10304 atoms)!
+Try 1135 success (now 10307 atoms)!
+Try 1136 success (now 10310 atoms)!
+Try 1137Try 1138 success (now 10313 atoms)!
+Try 1139Try 1140Try 1141 success (now 10316 atoms)!
+Try 1142 success (now 10319 atoms)!
+Try 1143Try 1144Try 1145 success (now 10322 atoms)!
+Try 1146Try 1147Try 1148Try 1149 success (now 10325 atoms)!
+Try 1150Try 1151 success (now 10328 atoms)!
+Try 1152Try 1153Try 1154Try 1155Try 1156 success (now 10331 atoms)!
+Try 1157 success (now 10334 atoms)!
+Try 1158Try 1159Try 1160Try 1161Try 1162Try 1163Try 1164Try 1165 success (now 10337 atoms)!
+Try 1166 success (now 10340 atoms)!
+Try 1167Try 1168Try 1169Try 1170Try 1171 success (now 10343 atoms)!
+Try 1172 success (now 10346 atoms)!
+Try 1173 success (now 10349 atoms)!
+Try 1174 success (now 10352 atoms)!
+Try 1175Try 1176 success (now 10355 atoms)!
+Try 1177Try 1178 success (now 10358 atoms)!
+Try 1179Try 1180Try 1181 success (now 10361 atoms)!
+Try 1182 success (now 10364 atoms)!
+Try 1183Try 1184Try 1185Try 1186 success (now 10367 atoms)!
+Try 1187Try 1188Try 1189Try 1190Try 1191Try 1192Try 1193Try 1194 success (now 10370 atoms)!
+Try 1195 success (now 10373 atoms)!
+Try 1196Try 1197Try 1198Try 1199Try 1200 success (now 10376 atoms)!
+Try 1201Try 1202Try 1203 success (now 10379 atoms)!
+Try 1204Try 1205Try 1206Try 1207 success (now 10382 atoms)!
+Try 1208Try 1209Try 1210Try 1211Try 1212Try 1213Try 1214Try 1215Try 1216Try 1217Try 1218Try 1219Try 1220Try 1221 success (now 10385 atoms)!
+Try 1222 success (now 10388 atoms)!
+Try 1223Try 1224 success (now 10391 atoms)!
+Try 1225Try 1226Try 1227Try 1228Try 1229Try 1230 success (now 10394 atoms)!
+Try 1231Try 1232Try 1233Try 1234Try 1235 success (now 10397 atoms)!
+Try 1236Try 1237Try 1238 success (now 10400 atoms)!
+Try 1239Try 1240Try 1241Try 1242 success (now 10403 atoms)!
+Try 1243 success (now 10406 atoms)!
+Try 1244Try 1245 success (now 10409 atoms)!
+Try 1246Try 1247Try 1248 success (now 10412 atoms)!
+Try 1249 success (now 10415 atoms)!
+Try 1250 success (now 10418 atoms)!
+Try 1251Try 1252Try 1253Try 1254 success (now 10421 atoms)!
+Try 1255 success (now 10424 atoms)!
+Try 1256Try 1257Try 1258Try 1259Try 1260 success (now 10427 atoms)!
+Try 1261Try 1262 success (now 10430 atoms)!
+Try 1263 success (now 10433 atoms)!
+Try 1264 success (now 10436 atoms)!
+Try 1265 success (now 10439 atoms)!
+Try 1266Try 1267Try 1268 success (now 10442 atoms)!
+Try 1269Try 1270Try 1271 success (now 10445 atoms)!
+Try 1272Try 1273Try 1274Try 1275 success (now 10448 atoms)!
+Try 1276 success (now 10451 atoms)!
+Try 1277 success (now 10454 atoms)!
+Try 1278 success (now 10457 atoms)!
+Try 1279Try 1280 success (now 10460 atoms)!
+Try 1281 success (now 10463 atoms)!
+Try 1282 success (now 10466 atoms)!
+Try 1283 success (now 10469 atoms)!
+Try 1284Try 1285 success (now 10472 atoms)!
+Try 1286Try 1287 success (now 10475 atoms)!
+Try 1288 success (now 10478 atoms)!
+Try 1289Try 1290Try 1291 success (now 10481 atoms)!
+Try 1292Try 1293Try 1294Try 1295Try 1296 success (now 10484 atoms)!
+Try 1297Try 1298Try 1299Try 1300Try 1301Try 1302 success (now 10487 atoms)!
+Try 1303 success (now 10490 atoms)!
+Try 1304Try 1305Try 1306Try 1307 success (now 10493 atoms)!
+Try 1308Try 1309 success (now 10496 atoms)!
+Try 1310Try 1311 success (now 10499 atoms)!
+Try 1312Try 1313 success (now 10502 atoms)!
+Try 1314Try 1315Try 1316Try 1317Try 1318Try 1319Try 1320Try 1321Try 1322Try 1323Try 1324Try 1325Try 1326Try 1327 success (now 10505 atoms)!
+Try 1328 success (now 10508 atoms)!
+Try 1329 success (now 10511 atoms)!
+Try 1330Try 1331Try 1332 success (now 10514 atoms)!
+Try 1333Try 1334Try 1335Try 1336 success (now 10517 atoms)!
+Try 1337 success (now 10520 atoms)!
+Try 1338Try 1339Try 1340 success (now 10523 atoms)!
+Try 1341Try 1342Try 1343 success (now 10526 atoms)!
+Try 1344Try 1345 success (now 10529 atoms)!
+Try 1346Try 1347Try 1348Try 1349Try 1350 success (now 10532 atoms)!
+Try 1351 success (now 10535 atoms)!
+Try 1352Try 1353Try 1354 success (now 10538 atoms)!
+Try 1355Try 1356Try 1357Try 1358 success (now 10541 atoms)!
+Try 1359Try 1360 success (now 10544 atoms)!
+Try 1361Try 1362Try 1363 success (now 10547 atoms)!
+Try 1364Try 1365 success (now 10550 atoms)!
+Try 1366Try 1367Try 1368 success (now 10553 atoms)!
+Try 1369Try 1370Try 1371Try 1372Try 1373Try 1374 success (now 10556 atoms)!
+Try 1375 success (now 10559 atoms)!
+Try 1376Try 1377 success (now 10562 atoms)!
+Try 1378Try 1379Try 1380 success (now 10565 atoms)!
+Try 1381Try 1382Try 1383 success (now 10568 atoms)!
+Try 1384Try 1385Try 1386Try 1387 success (now 10571 atoms)!
+Try 1388 success (now 10574 atoms)!
+Try 1389Try 1390 success (now 10577 atoms)!
+Try 1391 success (now 10580 atoms)!
+Try 1392 success (now 10583 atoms)!
+Try 1393Try 1394Try 1395Try 1396 success (now 10586 atoms)!
+Try 1397Try 1398Try 1399 success (now 10589 atoms)!
+Try 1400 success (now 10592 atoms)!
+Try 1401Try 1402Try 1403Try 1404Try 1405Try 1406Try 1407Try 1408Try 1409 success (now 10595 atoms)!
+Try 1410 success (now 10598 atoms)!
+Try 1411Try 1412Try 1413 success (now 10601 atoms)!
+Try 1414 success (now 10604 atoms)!
+Try 1415 success (now 10607 atoms)!
+Try 1416 success (now 10610 atoms)!
+Try 1417Try 1418Try 1419 success (now 10613 atoms)!
+Try 1420Try 1421 success (now 10616 atoms)!
+Try 1422 success (now 10619 atoms)!
+Try 1423 success (now 10622 atoms)!
+Try 1424Try 1425Try 1426Try 1427 success (now 10625 atoms)!
+Try 1428Try 1429 success (now 10628 atoms)!
+Try 1430 success (now 10631 atoms)!
+Try 1431 success (now 10634 atoms)!
+Try 1432 success (now 10637 atoms)!
+Try 1433 success (now 10640 atoms)!
+Try 1434Try 1435Try 1436 success (now 10643 atoms)!
+Try 1437Try 1438Try 1439 success (now 10646 atoms)!
+Try 1440 success (now 10649 atoms)!
+Try 1441 success (now 10652 atoms)!
+Try 1442 success (now 10655 atoms)!
+Try 1443 success (now 10658 atoms)!
+Try 1444 success (now 10661 atoms)!
+Try 1445Try 1446 success (now 10664 atoms)!
+Try 1447Try 1448Try 1449Try 1450Try 1451Try 1452 success (now 10667 atoms)!
+Try 1453Try 1454 success (now 10670 atoms)!
+Try 1455Try 1456Try 1457Try 1458Try 1459Try 1460 success (now 10673 atoms)!
+Try 1461 success (now 10676 atoms)!
+Try 1462Try 1463Try 1464Try 1465Try 1466Try 1467 success (now 10679 atoms)!
+Try 1468Try 1469 success (now 10682 atoms)!
+Try 1470 success (now 10685 atoms)!
+Try 1471 success (now 10688 atoms)!
+Try 1472Try 1473Try 1474Try 1475Try 1476 success (now 10691 atoms)!
+Try 1477Try 1478Try 1479Try 1480 success (now 10694 atoms)!
+Try 1481Try 1482 success (now 10697 atoms)!
+Try 1483 success (now 10700 atoms)!
+Try 1484 success (now 10703 atoms)!
+Try 1485Try 1486 success (now 10706 atoms)!
+Try 1487 success (now 10709 atoms)!
+Try 1488Try 1489 success (now 10712 atoms)!
+Try 1490Try 1491 success (now 10715 atoms)!
+Try 1492 success (now 10718 atoms)!
+Try 1493 success (now 10721 atoms)!
+Try 1494Try 1495 success (now 10724 atoms)!
+Try 1496Try 1497Try 1498 success (now 10727 atoms)!
+Try 1499Try 1500 success (now 10730 atoms)!
+Try 1501 success (now 10733 atoms)!
+Try 1502Try 1503Try 1504Try 1505Try 1506Try 1507Try 1508 success (now 10736 atoms)!
+Try 1509Try 1510 success (now 10739 atoms)!
+Try 1511Try 1512 success (now 10742 atoms)!
+Try 1513Try 1514 success (now 10745 atoms)!
+Try 1515 success (now 10748 atoms)!
+Try 1516Try 1517Try 1518Try 1519Try 1520 success (now 10751 atoms)!
+Try 1521Try 1522Try 1523Try 1524 success (now 10754 atoms)!
+Try 1525 success (now 10757 atoms)!
+Try 1526Try 1527Try 1528Try 1529Try 1530Try 1531Try 1532Try 1533Try 1534 success (now 10760 atoms)!
+Try 1535 success (now 10763 atoms)!
+Try 1536 success (now 10766 atoms)!
+Try 1537Try 1538Try 1539 success (now 10769 atoms)!
+Try 1540Try 1541Try 1542Try 1543Try 1544Try 1545 success (now 10772 atoms)!
+Try 1546Try 1547 success (now 10775 atoms)!
+Try 1548 success (now 10778 atoms)!
+Try 1549 success (now 10781 atoms)!
+Try 1550Try 1551Try 1552 success (now 10784 atoms)!
+Try 1553Try 1554 success (now 10787 atoms)!
+Try 1555Try 1556Try 1557Try 1558Try 1559 success (now 10790 atoms)!
+Try 1560Try 1561 success (now 10793 atoms)!
+Try 1562Try 1563Try 1564Try 1565 success (now 10796 atoms)!
+Try 1566Try 1567 success (now 10799 atoms)!
+Try 1568Try 1569Try 1570Try 1571Try 1572 success (now 10802 atoms)!
+Try 1573Try 1574Try 1575 success (now 10805 atoms)!
+Try 1576Try 1577Try 1578Try 1579Try 1580Try 1581Try 1582 success (now 10808 atoms)!
+Try 1583Try 1584Try 1585Try 1586Try 1587 success (now 10811 atoms)!
+Try 1588Try 1589Try 1590Try 1591Try 1592 success (now 10814 atoms)!
+Try 1593Try 1594 success (now 10817 atoms)!
+Try 1595Try 1596Try 1597 success (now 10820 atoms)!
+Try 1598 success (now 10823 atoms)!
+Try 1599Try 1600Try 1601 success (now 10826 atoms)!
+Try 1602Try 1603Try 1604 success (now 10829 atoms)!
+Try 1605Try 1606Try 1607Try 1608Try 1609 success (now 10832 atoms)!
+Try 1610 success (now 10835 atoms)!
+Try 1611 success (now 10838 atoms)!
+Try 1612Try 1613 success (now 10841 atoms)!
+Try 1614 success (now 10844 atoms)!
+Try 1615Try 1616 success (now 10847 atoms)!
+Try 1617Try 1618 success (now 10850 atoms)!
+Try 1619 success (now 10853 atoms)!
+Try 1620Try 1621Try 1622Try 1623Try 1624 success (now 10856 atoms)!
+Try 1625Try 1626Try 1627 success (now 10859 atoms)!
+Try 1628Try 1629Try 1630 success (now 10862 atoms)!
+Try 1631Try 1632 success (now 10865 atoms)!
+Try 1633Try 1634 success (now 10868 atoms)!
+Try 1635Try 1636Try 1637Try 1638Try 1639Try 1640Try 1641Try 1642Try 1643Try 1644Try 1645Try 1646Try 1647 success (now 10871 atoms)!
+Try 1648 success (now 10874 atoms)!
+Try 1649Try 1650Try 1651Try 1652Try 1653Try 1654 success (now 10877 atoms)!
+Try 1655Try 1656Try 1657 success (now 10880 atoms)!
+Try 1658Try 1659 success (now 10883 atoms)!
+Try 1660 success (now 10886 atoms)!
+Try 1661 success (now 10889 atoms)!
+Try 1662 success (now 10892 atoms)!
+Try 1663Try 1664Try 1665 success (now 10895 atoms)!
+Try 1666 success (now 10898 atoms)!
+Try 1667Try 1668Try 1669Try 1670 success (now 10901 atoms)!
+Try 1671 success (now 10904 atoms)!
+Try 1672Try 1673Try 1674Try 1675Try 1676 success (now 10907 atoms)!
+Try 1677Try 1678 success (now 10910 atoms)!
+Try 1679Try 1680Try 1681Try 1682Try 1683Try 1684 success (now 10913 atoms)!
+Try 1685Try 1686Try 1687 success (now 10916 atoms)!
+Try 1688 success (now 10919 atoms)!
+Try 1689Try 1690Try 1691 success (now 10922 atoms)!
+Try 1692Try 1693Try 1694Try 1695Try 1696Try 1697Try 1698Try 1699 success (now 10925 atoms)!
+Try 1700 success (now 10928 atoms)!
+Try 1701 success (now 10931 atoms)!
+Try 1702Try 1703 success (now 10934 atoms)!
+Try 1704Try 1705Try 1706 success (now 10937 atoms)!
+Try 1707Try 1708 success (now 10940 atoms)!
+Try 1709 success (now 10943 atoms)!
+Try 1710 success (now 10946 atoms)!
+Try 1711 success (now 10949 atoms)!
+Try 1712Try 1713Try 1714 success (now 10952 atoms)!
+Try 1715 success (now 10955 atoms)!
+Try 1716 success (now 10958 atoms)!
+Try 1717Try 1718Try 1719Try 1720Try 1721 success (now 10961 atoms)!
+Try 1722 success (now 10964 atoms)!
+Try 1723Try 1724 success (now 10967 atoms)!
+Try 1725Try 1726Try 1727Try 1728Try 1729Try 1730Try 1731Try 1732 success (now 10970 atoms)!
+Try 1733 success (now 10973 atoms)!
+Try 1734Try 1735Try 1736Try 1737 success (now 10976 atoms)!
+Try 1738Try 1739 success (now 10979 atoms)!
+Try 1740 success (now 10982 atoms)!
+Try 1741Try 1742 success (now 10985 atoms)!
+Try 1743 success (now 10988 atoms)!
+Try 1744Try 1745Try 1746Try 1747Try 1748Try 1749 success (now 10991 atoms)!
+Try 1750Try 1751Try 1752Try 1753Try 1754 success (now 10994 atoms)!
+Try 1755 success (now 10997 atoms)!
+Try 1756 success (now 11000 atoms)!
+Try 1757Try 1758Try 1759 success (now 11003 atoms)!
+Try 1760Try 1761 success (now 11006 atoms)!
+Try 1762 success (now 11009 atoms)!
+Try 1763 success (now 11012 atoms)!
+Try 1764 success (now 11015 atoms)!
+Try 1765 success (now 11018 atoms)!
+Try 1766Try 1767 success (now 11021 atoms)!
+Try 1768 success (now 11024 atoms)!
+Try 1769Try 1770Try 1771Try 1772Try 1773Try 1774 success (now 11027 atoms)!
+Try 1775Try 1776 success (now 11030 atoms)!
+Try 1777 success (now 11033 atoms)!
+Try 1778 success (now 11036 atoms)!
+Try 1779 success (now 11039 atoms)!
+Try 1780 success (now 11042 atoms)!
+Try 1781Try 1782Try 1783Try 1784Try 1785 success (now 11045 atoms)!
+Try 1786 success (now 11048 atoms)!
+Try 1787 success (now 11051 atoms)!
+Try 1788 success (now 11054 atoms)!
+Try 1789Try 1790Try 1791Try 1792 success (now 11057 atoms)!
+Try 1793Try 1794Try 1795Try 1796Try 1797Try 1798 success (now 11060 atoms)!
+Try 1799Try 1800Try 1801 success (now 11063 atoms)!
+Try 1802Try 1803Try 1804Try 1805Try 1806 success (now 11066 atoms)!
+Try 1807Try 1808Try 1809 success (now 11069 atoms)!
+Try 1810Try 1811 success (now 11072 atoms)!
+Try 1812Try 1813 success (now 11075 atoms)!
+Try 1814Try 1815Try 1816 success (now 11078 atoms)!
+Try 1817 success (now 11081 atoms)!
+Try 1818 success (now 11084 atoms)!
+Try 1819Try 1820Try 1821Try 1822Try 1823 success (now 11087 atoms)!
+Try 1824Try 1825 success (now 11090 atoms)!
+Try 1826 success (now 11093 atoms)!
+Try 1827Try 1828 success (now 11096 atoms)!
+Try 1829Try 1830 success (now 11099 atoms)!
+Try 1831 success (now 11102 atoms)!
+Try 1832Try 1833Try 1834 success (now 11105 atoms)!
+Try 1835Try 1836Try 1837Try 1838Try 1839Try 1840 success (now 11108 atoms)!
+Try 1841 success (now 11111 atoms)!
+Try 1842Try 1843Try 1844 success (now 11114 atoms)!
+Try 1845 success (now 11117 atoms)!
+Try 1846Try 1847 success (now 11120 atoms)!
+Try 1848 success (now 11123 atoms)!
+Try 1849Try 1850Try 1851Try 1852Try 1853 success (now 11126 atoms)!
+Try 1854Try 1855Try 1856 success (now 11129 atoms)!
+Try 1857 success (now 11132 atoms)!
+Try 1858Try 1859 success (now 11135 atoms)!
+Try 1860 success (now 11138 atoms)!
+Try 1861 success (now 11141 atoms)!
+Try 1862Try 1863 success (now 11144 atoms)!
+Try 1864 success (now 11147 atoms)!
+Try 1865 success (now 11150 atoms)!
+Try 1866Try 1867 success (now 11153 atoms)!
+Try 1868Try 1869 success (now 11156 atoms)!
+Try 1870 success (now 11159 atoms)!
+Try 1871Try 1872 success (now 11162 atoms)!
+Try 1873Try 1874Try 1875Try 1876Try 1877 success (now 11165 atoms)!
+Try 1878 success (now 11168 atoms)!
+Try 1879Try 1880 success (now 11171 atoms)!
+Try 1881 success (now 11174 atoms)!
+Try 1882Try 1883 success (now 11177 atoms)!
+Try 1884 success (now 11180 atoms)!
+Try 1885 success (now 11183 atoms)!
+Try 1886Try 1887 success (now 11186 atoms)!
+Try 1888Try 1889Try 1890Try 1891Try 1892Try 1893Try 1894Try 1895Try 1896Try 1897 success (now 11189 atoms)!
+Try 1898Try 1899Try 1900 success (now 11192 atoms)!
+Try 1901 success (now 11195 atoms)!
+Try 1902Try 1903 success (now 11198 atoms)!
+Try 1904Try 1905Try 1906 success (now 11201 atoms)!
+Try 1907Try 1908Try 1909Try 1910Try 1911Try 1912Try 1913Try 1914Try 1915Try 1916Try 1917 success (now 11204 atoms)!
+Try 1918Try 1919Try 1920Try 1921 success (now 11207 atoms)!
+Try 1922Try 1923Try 1924 success (now 11210 atoms)!
+Try 1925Try 1926 success (now 11213 atoms)!
+Try 1927Try 1928Try 1929Try 1930Try 1931Try 1932Try 1933Try 1934Try 1935Try 1936Try 1937 success (now 11216 atoms)!
+Try 1938Try 1939Try 1940Try 1941 success (now 11219 atoms)!
+Try 1942Try 1943 success (now 11222 atoms)!
+Try 1944Try 1945Try 1946 success (now 11225 atoms)!
+Try 1947 success (now 11228 atoms)!
+Try 1948Try 1949 success (now 11231 atoms)!
+Try 1950 success (now 11234 atoms)!
+Try 1951Try 1952Try 1953Try 1954 success (now 11237 atoms)!
+Try 1955 success (now 11240 atoms)!
+Try 1956Try 1957Try 1958 success (now 11243 atoms)!
+Try 1959Try 1960Try 1961Try 1962Try 1963Try 1964Try 1965 success (now 11246 atoms)!
+Try 1966 success (now 11249 atoms)!
+Try 1967Try 1968 success (now 11252 atoms)!
+Try 1969Try 1970Try 1971 success (now 11255 atoms)!
+Try 1972Try 1973Try 1974Try 1975 success (now 11258 atoms)!
+Try 1976Try 1977Try 1978Try 1979Try 1980 success (now 11261 atoms)!
+Try 1981Try 1982Try 1983 success (now 11264 atoms)!
+Try 1984Try 1985Try 1986 success (now 11267 atoms)!
+Try 1987Try 1988Try 1989Try 1990Try 1991 success (now 11270 atoms)!
+Try 1992Try 1993Try 1994 success (now 11273 atoms)!
+Try 1995Try 1996Try 1997Try 1998 success (now 11276 atoms)!
+Try 1999Try 2000 success (now 11279 atoms)!
+Try 2001 success (now 11282 atoms)!
+Try 2002 success (now 11285 atoms)!
+Try 2003Try 2004Try 2005 success (now 11288 atoms)!
+Try 2006Try 2007 success (now 11291 atoms)!
+Try 2008 success (now 11294 atoms)!
+Try 2009 success (now 11297 atoms)!
+Try 2010Try 2011 success (now 11300 atoms)!
+Try 2012Try 2013Try 2014Try 2015Try 2016 success (now 11303 atoms)!
+Try 2017Try 2018Try 2019 success (now 11306 atoms)!
+Try 2020 success (now 11309 atoms)!
+Try 2021 success (now 11312 atoms)!
+Try 2022Try 2023Try 2024Try 2025Try 2026Try 2027Try 2028Try 2029Try 2030Try 2031Try 2032 success (now 11315 atoms)!
+Try 2033Try 2034Try 2035Try 2036 success (now 11318 atoms)!
+Try 2037Try 2038Try 2039Try 2040 success (now 11321 atoms)!
+Try 2041Try 2042Try 2043Try 2044Try 2045 success (now 11324 atoms)!
+Try 2046Try 2047Try 2048Try 2049Try 2050Try 2051Try 2052Try 2053Try 2054 success (now 11327 atoms)!
+Try 2055Try 2056Try 2057 success (now 11330 atoms)!
+Try 2058Try 2059Try 2060 success (now 11333 atoms)!
+Try 2061Try 2062Try 2063Try 2064 success (now 11336 atoms)!
+Try 2065Try 2066Try 2067 success (now 11339 atoms)!
+Try 2068Try 2069 success (now 11342 atoms)!
+Try 2070 success (now 11345 atoms)!
+Try 2071Try 2072Try 2073 success (now 11348 atoms)!
+Try 2074 success (now 11351 atoms)!
+Try 2075 success (now 11354 atoms)!
+Try 2076Try 2077Try 2078 success (now 11357 atoms)!
+Try 2079 success (now 11360 atoms)!
+Try 2080Try 2081Try 2082Try 2083Try 2084 success (now 11363 atoms)!
+Try 2085 success (now 11366 atoms)!
+Try 2086Try 2087Try 2088 success (now 11369 atoms)!
+Try 2089Try 2090 success (now 11372 atoms)!
+Try 2091Try 2092Try 2093 success (now 11375 atoms)!
+Try 2094 success (now 11378 atoms)!
+Try 2095Try 2096Try 2097Try 2098Try 2099Try 2100Try 2101Try 2102Try 2103 success (now 11381 atoms)!
+Try 2104 success (now 11384 atoms)!
+Try 2105 success (now 11387 atoms)!
+Try 2106Try 2107 success (now 11390 atoms)!
+Try 2108 success (now 11393 atoms)!
+Try 2109Try 2110 success (now 11396 atoms)!
+Try 2111Try 2112 success (now 11399 atoms)!
+Try 2113Try 2114Try 2115Try 2116 success (now 11402 atoms)!
+Try 2117Try 2118Try 2119Try 2120Try 2121Try 2122 success (now 11405 atoms)!
+Try 2123Try 2124Try 2125Try 2126Try 2127 success (now 11408 atoms)!
+Try 2128Try 2129Try 2130 success (now 11411 atoms)!
+Try 2131 success (now 11414 atoms)!
+Try 2132 success (now 11417 atoms)!
+Try 2133 success (now 11420 atoms)!
+Try 2134Try 2135 success (now 11423 atoms)!
+Try 2136Try 2137Try 2138Try 2139Try 2140Try 2141 success (now 11426 atoms)!
+Try 2142Try 2143Try 2144Try 2145Try 2146 success (now 11429 atoms)!
+Try 2147Try 2148Try 2149 success (now 11432 atoms)!
+Try 2150Try 2151Try 2152Try 2153 success (now 11435 atoms)!
+Try 2154Try 2155 success (now 11438 atoms)!
+Try 2156Try 2157Try 2158Try 2159 success (now 11441 atoms)!
+Try 2160 success (now 11444 atoms)!
+Try 2161 success (now 11447 atoms)!
+Try 2162Try 2163 success (now 11450 atoms)!
+Try 2164 success (now 11453 atoms)!
+Try 2165 success (now 11456 atoms)!
+Try 2166 success (now 11459 atoms)!
+Try 2167Try 2168Try 2169 success (now 11462 atoms)!
+Try 2170Try 2171 success (now 11465 atoms)!
+Try 2172Try 2173 success (now 11468 atoms)!
+Try 2174 success (now 11471 atoms)!
+Try 2175 success (now 11474 atoms)!
+Try 2176Try 2177Try 2178 success (now 11477 atoms)!
+Try 2179Try 2180Try 2181 success (now 11480 atoms)!
+Try 2182Try 2183Try 2184Try 2185 success (now 11483 atoms)!
+Try 2186Try 2187Try 2188Try 2189Try 2190 success (now 11486 atoms)!
+Try 2191Try 2192Try 2193 success (now 11489 atoms)!
+Try 2194 success (now 11492 atoms)!
+Try 2195Try 2196 success (now 11495 atoms)!
+Try 2197Try 2198Try 2199Try 2200Try 2201 success (now 11498 atoms)!
+Try 2202Try 2203Try 2204 success (now 11501 atoms)!
+Try 2205Try 2206Try 2207Try 2208Try 2209 success (now 11504 atoms)!
+Try 2210 success (now 11507 atoms)!
+Try 2211Try 2212 success (now 11510 atoms)!
+Try 2213Try 2214Try 2215 success (now 11513 atoms)!
+Try 2216Try 2217Try 2218Try 2219Try 2220Try 2221 success (now 11516 atoms)!
+Try 2222Try 2223Try 2224Try 2225Try 2226Try 2227 success (now 11519 atoms)!
+Try 2228 success (now 11522 atoms)!
+Try 2229Try 2230 success (now 11525 atoms)!
+Try 2231 success (now 11528 atoms)!
+Try 2232 success (now 11531 atoms)!
+Try 2233Try 2234Try 2235Try 2236Try 2237Try 2238Try 2239Try 2240 success (now 11534 atoms)!
+Try 2241Try 2242 success (now 11537 atoms)!
+Try 2243Try 2244Try 2245Try 2246 success (now 11540 atoms)!
+Try 2247Try 2248Try 2249Try 2250 success (now 11543 atoms)!
+Try 2251Try 2252Try 2253 success (now 11546 atoms)!
+Try 2254Try 2255 success (now 11549 atoms)!
+Try 2256Try 2257Try 2258 success (now 11552 atoms)!
+Try 2259 success (now 11555 atoms)!
+Try 2260 success (now 11558 atoms)!
+Try 2261 success (now 11561 atoms)!
+Try 2262Try 2263 success (now 11564 atoms)!
+Try 2264Try 2265 success (now 11567 atoms)!
+Try 2266Try 2267Try 2268Try 2269Try 2270 success (now 11570 atoms)!
+Try 2271 success (now 11573 atoms)!
+Try 2272 success (now 11576 atoms)!
+Try 2273Try 2274Try 2275Try 2276 success (now 11579 atoms)!
+Try 2277Try 2278Try 2279 success (now 11582 atoms)!
+Try 2280 success (now 11585 atoms)!
+Try 2281Try 2282Try 2283 success (now 11588 atoms)!
+Try 2284Try 2285 success (now 11591 atoms)!
+Try 2286Try 2287 success (now 11594 atoms)!
+Try 2288 success (now 11597 atoms)!
+Try 2289Try 2290 success (now 11600 atoms)!
+Try 2291Try 2292Try 2293 success (now 11603 atoms)!
+Try 2294Try 2295Try 2296 success (now 11606 atoms)!
+Try 2297Try 2298 success (now 11609 atoms)!
+Try 2299Try 2300Try 2301Try 2302Try 2303Try 2304 success (now 11612 atoms)!
+Try 2305Try 2306Try 2307Try 2308Try 2309 success (now 11615 atoms)!
+Try 2310 success (now 11618 atoms)!
+Try 2311Try 2312Try 2313Try 2314 success (now 11621 atoms)!
+Try 2315 success (now 11624 atoms)!
+Try 2316 success (now 11627 atoms)!
+Try 2317Try 2318Try 2319Try 2320Try 2321Try 2322Try 2323Try 2324Try 2325 success (now 11630 atoms)!
+Try 2326Try 2327Try 2328Try 2329 success (now 11633 atoms)!
+Try 2330Try 2331Try 2332 success (now 11636 atoms)!
+Try 2333 success (now 11639 atoms)!
+Try 2334 success (now 11642 atoms)!
+Try 2335Try 2336Try 2337 success (now 11645 atoms)!
+Try 2338 success (now 11648 atoms)!
+Try 2339Try 2340Try 2341Try 2342Try 2343 success (now 11651 atoms)!
+Try 2344 success (now 11654 atoms)!
+Try 2345Try 2346 success (now 11657 atoms)!
+Try 2347 success (now 11660 atoms)!
+Try 2348Try 2349 success (now 11663 atoms)!
+Try 2350Try 2351Try 2352 success (now 11666 atoms)!
+Try 2353Try 2354 success (now 11669 atoms)!
+Try 2355Try 2356 success (now 11672 atoms)!
+Try 2357Try 2358Try 2359 success (now 11675 atoms)!
+Try 2360Try 2361Try 2362Try 2363 success (now 11678 atoms)!
+Try 2364 success (now 11681 atoms)!
+Try 2365 success (now 11684 atoms)!
+Try 2366 success (now 11687 atoms)!
+Try 2367 success (now 11690 atoms)!
+Try 2368 success (now 11693 atoms)!
+Try 2369Try 2370 success (now 11696 atoms)!
+Try 2371 success (now 11699 atoms)!
+Try 2372 success (now 11702 atoms)!
+Try 2373 success (now 11705 atoms)!
+Try 2374 success (now 11708 atoms)!
+Try 2375 success (now 11711 atoms)!
+Try 2376Try 2377Try 2378Try 2379Try 2380 success (now 11714 atoms)!
+Try 2381Try 2382Try 2383Try 2384 success (now 11717 atoms)!
+Try 2385 success (now 11720 atoms)!
+Try 2386Try 2387Try 2388Try 2389Try 2390Try 2391 success (now 11723 atoms)!
+Try 2392Try 2393Try 2394Try 2395Try 2396 success (now 11726 atoms)!
+Try 2397 success (now 11729 atoms)!
+Try 2398Try 2399Try 2400 success (now 11732 atoms)!
+Try 2401Try 2402Try 2403 success (now 11735 atoms)!
+Try 2404 success (now 11738 atoms)!
+Try 2405Try 2406Try 2407Try 2408Try 2409Try 2410 success (now 11741 atoms)!
+Try 2411Try 2412Try 2413Try 2414 success (now 11744 atoms)!
+Try 2415Try 2416Try 2417Try 2418 success (now 11747 atoms)!
+Try 2419 success (now 11750 atoms)!
+Try 2420Try 2421Try 2422Try 2423Try 2424 success (now 11753 atoms)!
+Try 2425Try 2426Try 2427Try 2428 success (now 11756 atoms)!
+Try 2429Try 2430Try 2431Try 2432Try 2433Try 2434Try 2435Try 2436 success (now 11759 atoms)!
+Try 2437 success (now 11762 atoms)!
+Try 2438Try 2439Try 2440Try 2441 success (now 11765 atoms)!
+Try 2442Try 2443 success (now 11768 atoms)!
+Try 2444 success (now 11771 atoms)!
+Try 2445 success (now 11774 atoms)!
+Try 2446Try 2447Try 2448Try 2449Try 2450Try 2451 success (now 11777 atoms)!
+Try 2452 success (now 11780 atoms)!
+Try 2453Try 2454Try 2455Try 2456Try 2457 success (now 11783 atoms)!
+Try 2458Try 2459Try 2460Try 2461Try 2462 success (now 11786 atoms)!
+Try 2463 success (now 11789 atoms)!
+Try 2464 success (now 11792 atoms)!
+Try 2465 success (now 11795 atoms)!
+Try 2466 success (now 11798 atoms)!
+Try 2467Try 2468Try 2469 success (now 11801 atoms)!
+Try 2470Try 2471Try 2472Try 2473Try 2474 success (now 11804 atoms)!
+Try 2475 success (now 11807 atoms)!
+Try 2476 success (now 11810 atoms)!
+Try 2477Try 2478Try 2479Try 2480Try 2481 success (now 11813 atoms)!
+Try 2482Try 2483 success (now 11816 atoms)!
+Try 2484Try 2485Try 2486Try 2487Try 2488Try 2489Try 2490Try 2491Try 2492Try 2493Try 2494 success (now 11819 atoms)!
+Try 2495 success (now 11822 atoms)!
+Try 2496Try 2497Try 2498 success (now 11825 atoms)!
+Try 2499Try 2500Try 2501Try 2502Try 2503 success (now 11828 atoms)!
+Try 2504 success (now 11831 atoms)!
+Try 2505Try 2506Try 2507Try 2508 success (now 11834 atoms)!
+Try 2509 success (now 11837 atoms)!
+Try 2510Try 2511 success (now 11840 atoms)!
+Try 2512Try 2513Try 2514Try 2515Try 2516 success (now 11843 atoms)!
+Try 2517Try 2518Try 2519Try 2520Try 2521Try 2522 success (now 11846 atoms)!
+Try 2523 success (now 11849 atoms)!
+Try 2524 success (now 11852 atoms)!
+Try 2525Try 2526 success (now 11855 atoms)!
+Try 2527Try 2528Try 2529Try 2530Try 2531Try 2532Try 2533Try 2534 success (now 11858 atoms)!
+Try 2535 success (now 11861 atoms)!
+Try 2536Try 2537 success (now 11864 atoms)!
+Try 2538Try 2539 success (now 11867 atoms)!
+Try 2540Try 2541Try 2542Try 2543Try 2544Try 2545 success (now 11870 atoms)!
+Try 2546Try 2547Try 2548Try 2549Try 2550 success (now 11873 atoms)!
+Try 2551 success (now 11876 atoms)!
+Try 2552Try 2553Try 2554 success (now 11879 atoms)!
+Try 2555 success (now 11882 atoms)!
+Try 2556Try 2557 success (now 11885 atoms)!
+Try 2558 success (now 11888 atoms)!
+Try 2559Try 2560Try 2561Try 2562 success (now 11891 atoms)!
+Try 2563 success (now 11894 atoms)!
+Try 2564 success (now 11897 atoms)!
+Try 2565Try 2566Try 2567Try 2568Try 2569Try 2570Try 2571Try 2572Try 2573Try 2574Try 2575Try 2576Try 2577 success (now 11900 atoms)!
+Try 2578Try 2579Try 2580Try 2581Try 2582 success (now 11903 atoms)!
+Try 2583 success (now 11906 atoms)!
+Try 2584Try 2585 success (now 11909 atoms)!
+Try 2586 success (now 11912 atoms)!
+Try 2587Try 2588 success (now 11915 atoms)!
+Try 2589Try 2590 success (now 11918 atoms)!
+Try 2591 success (now 11921 atoms)!
+Try 2592Try 2593Try 2594Try 2595 success (now 11924 atoms)!
+Try 2596Try 2597Try 2598Try 2599 success (now 11927 atoms)!
+Try 2600Try 2601 success (now 11930 atoms)!
+Try 2602Try 2603Try 2604 success (now 11933 atoms)!
+Try 2605Try 2606 success (now 11936 atoms)!
+Try 2607Try 2608 success (now 11939 atoms)!
+Try 2609Try 2610Try 2611Try 2612 success (now 11942 atoms)!
+Try 2613Try 2614Try 2615Try 2616Try 2617Try 2618 success (now 11945 atoms)!
+Try 2619Try 2620Try 2621 success (now 11948 atoms)!
+Try 2622Try 2623 success (now 11951 atoms)!
+Try 2624Try 2625Try 2626Try 2627 success (now 11954 atoms)!
+Try 2628 success (now 11957 atoms)!
+Try 2629Try 2630Try 2631Try 2632Try 2633 success (now 11960 atoms)!
+Try 2634Try 2635 success (now 11963 atoms)!
+Try 2636 success (now 11966 atoms)!
+Try 2637Try 2638Try 2639Try 2640 success (now 11969 atoms)!
+Try 2641 success (now 11972 atoms)!
+Try 2642Try 2643 success (now 11975 atoms)!
+Try 2644 success (now 11978 atoms)!
+Try 2645Try 2646Try 2647 success (now 11981 atoms)!
+Try 2648 success (now 11984 atoms)!
+Try 2649 success (now 11987 atoms)!
+Try 2650Try 2651Try 2652Try 2653Try 2654Try 2655Try 2656Try 2657 success (now 11990 atoms)!
+Try 2658 success (now 11993 atoms)!
+Try 2659Try 2660Try 2661Try 2662Try 2663 success (now 11996 atoms)!
+Try 2664Try 2665Try 2666Try 2667Try 2668 success (now 11999 atoms)!
+Try 2669Try 2670 success (now 12002 atoms)!
+Try 2671Try 2672 success (now 12005 atoms)!
+Try 2673Try 2674Try 2675Try 2676Try 2677Try 2678 success (now 12008 atoms)!
+Try 2679Try 2680Try 2681 success (now 12011 atoms)!
+Try 2682 success (now 12014 atoms)!
+Try 2683Try 2684Try 2685Try 2686Try 2687Try 2688 success (now 12017 atoms)!
+Try 2689Try 2690Try 2691 success (now 12020 atoms)!
+Try 2692 success (now 12023 atoms)!
+Try 2693Try 2694Try 2695Try 2696 success (now 12026 atoms)!
+Try 2697 success (now 12029 atoms)!
+Try 2698Try 2699Try 2700Try 2701 success (now 12032 atoms)!
+Try 2702Try 2703 success (now 12035 atoms)!
+Try 2704 success (now 12038 atoms)!
+Try 2705 success (now 12041 atoms)!
+Try 2706Try 2707Try 2708Try 2709Try 2710 success (now 12044 atoms)!
+Try 2711Try 2712Try 2713Try 2714 success (now 12047 atoms)!
+Try 2715 success (now 12050 atoms)!
+Try 2716Try 2717Try 2718 success (now 12053 atoms)!
+Try 2719Try 2720 success (now 12056 atoms)!
+Try 2721Try 2722Try 2723Try 2724Try 2725Try 2726Try 2727 success (now 12059 atoms)!
+Try 2728Try 2729Try 2730 success (now 12062 atoms)!
+Try 2731 success (now 12065 atoms)!
+Try 2732 success (now 12068 atoms)!
+Try 2733 success (now 12071 atoms)!
+Try 2734 success (now 12074 atoms)!
+Try 2735 success (now 12077 atoms)!
+Try 2736 success (now 12080 atoms)!
+Try 2737Try 2738Try 2739 success (now 12083 atoms)!
+Try 2740Try 2741Try 2742Try 2743 success (now 12086 atoms)!
+Try 2744Try 2745 success (now 12089 atoms)!
+Try 2746Try 2747Try 2748Try 2749Try 2750 success (now 12092 atoms)!
+Try 2751Try 2752Try 2753Try 2754Try 2755Try 2756 success (now 12095 atoms)!
+Try 2757 success (now 12098 atoms)!
+Try 2758Try 2759Try 2760Try 2761 success (now 12101 atoms)!
+Try 2762Try 2763Try 2764Try 2765 success (now 12104 atoms)!
+Try 2766Try 2767 success (now 12107 atoms)!
+Try 2768 success (now 12110 atoms)!
+Try 2769Try 2770Try 2771Try 2772Try 2773Try 2774Try 2775 success (now 12113 atoms)!
+Try 2776 success (now 12116 atoms)!
+Try 2777 success (now 12119 atoms)!
+Try 2778Try 2779Try 2780Try 2781Try 2782Try 2783 success (now 12122 atoms)!
+Try 2784 success (now 12125 atoms)!
+Try 2785Try 2786 success (now 12128 atoms)!
+Try 2787 success (now 12131 atoms)!
+Try 2788Try 2789 success (now 12134 atoms)!
+Try 2790 success (now 12137 atoms)!
+Try 2791Try 2792Try 2793 success (now 12140 atoms)!
+Try 2794Try 2795Try 2796Try 2797Try 2798 success (now 12143 atoms)!
+Try 2799Try 2800Try 2801 success (now 12146 atoms)!
+Try 2802Try 2803Try 2804 success (now 12149 atoms)!
+Try 2805Try 2806 success (now 12152 atoms)!
+Try 2807Try 2808Try 2809Try 2810Try 2811Try 2812 success (now 12155 atoms)!
+Try 2813 success (now 12158 atoms)!
+Try 2814Try 2815Try 2816 success (now 12161 atoms)!
+Try 2817Try 2818Try 2819 success (now 12164 atoms)!
+Try 2820Try 2821Try 2822Try 2823Try 2824 success (now 12167 atoms)!
+Try 2825Try 2826Try 2827Try 2828 success (now 12170 atoms)!
+Try 2829Try 2830Try 2831Try 2832Try 2833Try 2834 success (now 12173 atoms)!
+Try 2835 success (now 12176 atoms)!
+Try 2836 success (now 12179 atoms)!
+Try 2837 success (now 12182 atoms)!
+Try 2838 success (now 12185 atoms)!
+Try 2839Try 2840Try 2841Try 2842 success (now 12188 atoms)!
+Try 2843Try 2844Try 2845 success (now 12191 atoms)!
+Try 2846Try 2847Try 2848Try 2849Try 2850Try 2851Try 2852Try 2853Try 2854Try 2855 success (now 12194 atoms)!
+Try 2856Try 2857 success (now 12197 atoms)!
+Try 2858 success (now 12200 atoms)!
+Try 2859Try 2860Try 2861 success (now 12203 atoms)!
+Try 2862 success (now 12206 atoms)!
+Try 2863Try 2864Try 2865Try 2866Try 2867Try 2868 success (now 12209 atoms)!
+Try 2869Try 2870Try 2871 success (now 12212 atoms)!
+Try 2872Try 2873Try 2874Try 2875 success (now 12215 atoms)!
+Try 2876 success (now 12218 atoms)!
+Try 2877Try 2878Try 2879 success (now 12221 atoms)!
+Try 2880 success (now 12224 atoms)!
+Try 2881Try 2882Try 2883Try 2884 success (now 12227 atoms)!
+Try 2885 success (now 12230 atoms)!
+Try 2886Try 2887Try 2888 success (now 12233 atoms)!
+Try 2889 success (now 12236 atoms)!
+Try 2890Try 2891 success (now 12239 atoms)!
+Try 2892Try 2893Try 2894Try 2895Try 2896Try 2897 success (now 12242 atoms)!
+Try 2898 success (now 12245 atoms)!
+Try 2899Try 2900Try 2901Try 2902Try 2903Try 2904 success (now 12248 atoms)!
+Try 2905Try 2906Try 2907 success (now 12251 atoms)!
+Try 2908 success (now 12254 atoms)!
+Try 2909Try 2910 success (now 12257 atoms)!
+Try 2911 success (now 12260 atoms)!
+Try 2912Try 2913Try 2914 success (now 12263 atoms)!
+Try 2915 success (now 12266 atoms)!
+Try 2916 success (now 12269 atoms)!
+Try 2917Try 2918Try 2919Try 2920Try 2921Try 2922Try 2923 success (now 12272 atoms)!
+Try 2924 success (now 12275 atoms)!
+Try 2925Try 2926 success (now 12278 atoms)!
+Try 2927Try 2928 success (now 12281 atoms)!
+Try 2929Try 2930 success (now 12284 atoms)!
+Try 2931 success (now 12287 atoms)!
+Try 2932Try 2933Try 2934Try 2935Try 2936Try 2937 success (now 12290 atoms)!
+Try 2938Try 2939Try 2940Try 2941 success (now 12293 atoms)!
+Try 2942Try 2943Try 2944Try 2945 success (now 12296 atoms)!
+Try 2946Try 2947Try 2948Try 2949Try 2950Try 2951Try 2952Try 2953 success (now 12299 atoms)!
+Try 2954 success (now 12302 atoms)!
+Try 2955 success (now 12305 atoms)!
+Try 2956Try 2957 success (now 12308 atoms)!
+Try 2958Try 2959 success (now 12311 atoms)!
+Try 2960Try 2961Try 2962Try 2963Try 2964Try 2965 success (now 12314 atoms)!
+Try 2966Try 2967 success (now 12317 atoms)!
+Try 2968Try 2969Try 2970Try 2971 success (now 12320 atoms)!
+Try 2972 success (now 12323 atoms)!
+Try 2973 success (now 12326 atoms)!
+Try 2974Try 2975Try 2976 success (now 12329 atoms)!
+Try 2977 success (now 12332 atoms)!
+Try 2978 success (now 12335 atoms)!
+Try 2979Try 2980 success (now 12338 atoms)!
+Try 2981Try 2982Try 2983Try 2984Try 2985Try 2986 success (now 12341 atoms)!
+Try 2987Try 2988Try 2989Try 2990Try 2991Try 2992Try 2993Try 2994 success (now 12344 atoms)!
+Try 2995 success (now 12347 atoms)!
+Try 2996Try 2997 success (now 12350 atoms)!
+Try 2998Try 2999 success (now 12353 atoms)!
+Try 3000Try 3001Try 3002Try 3003Try 3004 success (now 12356 atoms)!
+Try 3005Try 3006Try 3007Try 3008Try 3009 success (now 12359 atoms)!
+Try 3010Try 3011 success (now 12362 atoms)!
+Try 3012Try 3013Try 3014Try 3015 success (now 12365 atoms)!
+Try 3016Try 3017 success (now 12368 atoms)!
+Try 3018Try 3019 success (now 12371 atoms)!
+Try 3020Try 3021 success (now 12374 atoms)!
+Try 3022 success (now 12377 atoms)!
+Try 3023 success (now 12380 atoms)!
+Try 3024Try 3025Try 3026Try 3027 success (now 12383 atoms)!
+Try 3028Try 3029Try 3030Try 3031Try 3032Try 3033 success (now 12386 atoms)!
+Try 3034 success (now 12389 atoms)!
+Try 3035Try 3036 success (now 12392 atoms)!
+Try 3037Try 3038Try 3039Try 3040 success (now 12395 atoms)!
+Try 3041 success (now 12398 atoms)!
+Try 3042 success (now 12401 atoms)!
+Try 3043Try 3044Try 3045 success (now 12404 atoms)!
+Try 3046 success (now 12407 atoms)!
+Try 3047Try 3048Try 3049Try 3050Try 3051Try 3052Try 3053Try 3054 success (now 12410 atoms)!
+Try 3055 success (now 12413 atoms)!
+Try 3056Try 3057 success (now 12416 atoms)!
+Try 3058Try 3059Try 3060 success (now 12419 atoms)!
+Try 3061Try 3062 success (now 12422 atoms)!
+Try 3063 success (now 12425 atoms)!
+Try 3064Try 3065Try 3066 success (now 12428 atoms)!
+Try 3067Try 3068Try 3069Try 3070 success (now 12431 atoms)!
+Try 3071Try 3072 success (now 12434 atoms)!
+Try 3073Try 3074 success (now 12437 atoms)!
+Try 3075Try 3076 success (now 12440 atoms)!
+Try 3077 success (now 12443 atoms)!
+Try 3078Try 3079 success (now 12446 atoms)!
+Try 3080Try 3081Try 3082Try 3083Try 3084 success (now 12449 atoms)!
+Try 3085Try 3086 success (now 12452 atoms)!
+Try 3087 success (now 12455 atoms)!
+Try 3088Try 3089 success (now 12458 atoms)!
+Try 3090 success (now 12461 atoms)!
+Try 3091 success (now 12464 atoms)!
+Try 3092 success (now 12467 atoms)!
+Try 3093Try 3094Try 3095Try 3096 success (now 12470 atoms)!
+Try 3097 success (now 12473 atoms)!
+Try 3098 success (now 12476 atoms)!
+Try 3099 success (now 12479 atoms)!
+Try 3100Try 3101Try 3102 success (now 12482 atoms)!
+Try 3103Try 3104Try 3105 success (now 12485 atoms)!
+Try 3106Try 3107 success (now 12488 atoms)!
+Try 3108Try 3109 success (now 12491 atoms)!
+Try 3110Try 3111Try 3112Try 3113 success (now 12494 atoms)!
+Try 3114Try 3115 success (now 12497 atoms)!
+Try 3116 success (now 12500 atoms)!
+Try 3117 success (now 12503 atoms)!
+Try 3118 success (now 12506 atoms)!
+Try 3119 success (now 12509 atoms)!
+Try 3120Try 3121Try 3122 success (now 12512 atoms)!
+Try 3123Try 3124Try 3125 success (now 12515 atoms)!
+
+Added 1195 molecules (out of 1195 requested)
+Writing generated configuration to solvated.gro
+
+Output configuration contains 12515 atoms in 2136 residues
+
+GROMACS reminds you: "Jesus Can't Save You, Though It's Nice to Think He Tried" (Black Crowes)
+
