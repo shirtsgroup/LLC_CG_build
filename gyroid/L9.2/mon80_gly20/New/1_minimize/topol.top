@@ -1,0 +1,16 @@
+;Forcefield
+#include "lib/Forcefields/mod_gly_ion.itp"
+
+;ITW Topology
+#include "lib/topologies/ITW_res_no_dih.itp"
+
+;ION Topology
+#include "lib/topologies/ION.itp"
+
+[ system ]
+Simulation Box
+
+[ molecules ]
+;Compounds     nmols
+ITW              470
+ION              940

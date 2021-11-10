@@ -1,0 +1,12 @@
+#!/bin/bash
+source /usr/local/gromacs/2020.3_gpu/bin/GMXRC
+
+export GMX_MAXBACKUP=-1
+export GMX_MAXCONSTRWARN=-1
+
+gmx_mpi grompp -f nvt_long.mdp -p topol_0.top -c nvt_0.gro -r nvt_0.gro -o nvt_long
+gmx_mpi  mdrun -v -deffnm nvt_long
+
+gmx_mpi grompp -f npt_long.mdp -p topol_0.top -c nvt_long.gro -r nvt_long.gro  -o npt_long
+gmx_mpi  mdrun -v -deffnm npt_long
+
