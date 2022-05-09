@@ -1,0 +1,58 @@
+#!/bin/bash
+module load cuda
+module load gcc/10.2.0
+module load openmpi/3.1.6-gcc10.2.0
+source /jet/home/susa/pkgs/gromacs/2020.5_gpu/bin/GMXRC
+
+export GMX_MAXBACKUP=-1  # do not make back-ups
+export GMX_MAXCONSTRWARN=-1
+
+cp ../buildpdb/bilayer.pdb  .
+
+#Energy minimizaton
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f min.mdp -c bilayer.pdb -o itw_min.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_min -ntomp 1
+
+#NVT equilibration 0
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nvtequil_0.mdp -c itw_min.gro -o itw_nvteq_0.tpr 
+mpirun -np 1 gmx_mpi mdrun -v  -deffnm itw_nvteq_0 -ntomp 1 # using 1 thread to prevent DD error
+
+#NPT equilibration 0
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nptequil_0.mdp -c itw_nvteq_0.gro -o itw_npteq_0.tpr 
+mpirun -np 1 gmx_mpi mdrun -v  -deffnm itw_npteq_0 -ntomp 1 # using 1 thread to prevent DD error
+
+#NVT equilibration 1
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nvtequil_1.mdp -c itw_npteq_0.gro -o itw_nvteq_1.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_nvteq_1 -ntomp 1
+
+#NPT equilibration 1
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nptequil_1.mdp -c itw_nvteq_1.gro -o itw_npteq_1.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_npteq_1 -ntomp 1
+
+#NVT equilibration 2
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nvtequil_2.mdp -c itw_npteq_1.gro -o itw_nvteq_2.tpr 
+mpirun -np 1 gmx_mpi mdrun -v  -deffnm itw_nvteq_2 -ntomp 1
+
+#NPT equilibration 2
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nptequil_2.mdp -c itw_nvteq_2.gro -o itw_npteq_2.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_npteq_2 -ntomp 1
+
+#NVT equilibration 
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nvtequil.mdp -c itw_npteq_2.gro -o itw_nvteq.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_nvteq -ntomp 1
+
+#NPT equilibration 3
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nptequil_3.mdp -c itw_nvteq.gro -o itw_npteq_3.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_npteq_3 -ntomp 1
+
+#NPT equilibration
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f nptequil.mdp -c itw_npteq_3.gro -o itw_npteq.tpr 
+mpirun -np 4 gmx_mpi mdrun -v  -deffnm itw_npteq -ntomp 1
+
+#Production
+mpirun -np 1 gmx_mpi grompp -p itw_gly.top -f npt_prod.mdp -c itw_npteq.gro -o bilayer_prod
+mpirun -np 4 gmx_mpi mdrun -v -deffnm bilayer_prod -ntomp 1
+
+
+
+

@@ -1,0 +1,40 @@
+#
+# Lipid double layer with water over and below
+#
+
+tolerance 3 
+filetype pdb
+output bilayer_0.pdb
+
+structure glycerol.pdb 
+  number 500
+  inside box 0. 0. 0. 60. 60. 32.
+end structure
+
+structure glycerol.pdb
+  number 500
+  inside box 0. 0. 68. 60. 60. 100.
+end structure
+
+structure ITW_BR_cg.pdb 
+  number 64
+  inside box 0. 0. 35. 60. 60. 50.
+  atoms 16 17
+   over plane 0. 0. 1. 45.
+  end atoms
+  atoms 1 2
+      below plane 0. 0. 1. 40.
+  end atoms
+end structure 
+
+structure ITW_BR_cg.pdb 
+  number 64
+  inside box 0. 0. 50. 60. 60. 65.
+  atoms 1 2
+    over plane 0. 0. 1. 60 
+  end atoms
+  atoms 16 17
+     below plane 0. 0. 1. 55.
+  end atoms
+end structure 
+

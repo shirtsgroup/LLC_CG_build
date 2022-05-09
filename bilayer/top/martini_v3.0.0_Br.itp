@@ -1,0 +1,15 @@
+;;;;; Martini 3 - Database of ions and charged molecules.
+;;;;; File updated on 2021-03-29
+;;;;; Version: 3.0.0_v1
+
+
+;;;;;; Bromide ion
+
+[moleculetype]
+; molname 	nrexcl
+   BR 		1
+
+[atoms]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge   mass
+ 1 	SQ4 	1 	ION 	BR 	1 	-1.0      79.90
+

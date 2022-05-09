@@ -1,0 +1,38 @@
+integrator               = steep
+emstep                   = 0.001
+;nsteps                   = 10
+nsteps                   = -1
+
+nstxout   =  1000
+nstlog                   = 1000
+nstenergy                = 1000
+nstxout-compressed       = 1000
+
+
+cutoff-scheme            = Verlet
+pbc                      = xyz
+verlet-buffer-tolerance  = 0.005
+
+epsilon_r                = 10
+epsilon_rf               = 50
+coulombtype              = reaction-field
+rcoulomb                 = 1.1
+vdw_type                 = cutoff
+vdw-modifier             = Potential-shift-verlet
+rvdw                     = 1.1
+
+; GENERATE VELOCITIES FOR STARTUP RUN:
+gen_vel                  = no
+
+; Type of constraint algorithm
+constraint-algorithm     = Lincs
+; Highest order in the expansion of the constraint coupling matrix
+lincs-order              = 12
+; Number of iterations in the final step of LINCS. 1 is fine for
+; normal simulations, but use 2 to conserve energy in NVE runs.
+; For energy minimization with constraints it should be 4 to 8.
+lincs-iter               = 8
+
+
+;comm-mode      = Linear
+;nstcomm         = 1

@@ -1,0 +1,5 @@
+To build the bilayer
+1) Run buildpdb.sh from ./buildpdb
+2) Run in_gpu.job from ./prepare
+3) Run cpu.job from ./run
+
