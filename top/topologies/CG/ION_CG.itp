@@ -1,0 +1,9 @@
+;;;;;; BROMIDE ION
+
+[ moleculetype ]
+; molname 	nrexcl
+  ION 		1
+
+[ atoms ]
+;id 	type 	resnr 	residu 	atom 	cgnr 	charge mass
+ 1 	SQ4 	1 	ION 	BR 	1 	-1.0   79.90

@@ -1,0 +1,33 @@
+REMARK   1 CREATED WITH OPENMM 7.7, 2022-09-13
+MODEL        1
+HETATM    1  C1x UNK A   1      -0.800   0.162  -0.595  1.00  0.00           C  
+HETATM    2  O1x UNK A   1      -0.855  -1.301  -0.595  1.00  0.00           O  
+HETATM    3  C2x UNK A   1       0.184   0.632   0.462  1.00  0.00           C  
+HETATM    4  O2x UNK A   1       0.106   2.030   0.523  1.00  0.00           O  
+HETATM    5  C3x UNK A   1       1.572   0.198   0.098  1.00  0.00           C  
+HETATM    6  O3x UNK A   1       2.505   0.859   0.976  1.00  0.00           O  
+HETATM    7  H1x UNK A   1      -1.783   0.604  -0.406  1.00  0.00           H  
+HETATM    8  H2x UNK A   1      -0.487   0.477  -1.595  1.00  0.00           H  
+HETATM    9  H3x UNK A   1      -1.071  -1.688   0.269  1.00  0.00           H  
+HETATM   10  H4x UNK A   1      -0.072   0.215   1.441  1.00  0.00           H  
+HETATM   11  H5x UNK A   1      -0.507   2.351   1.205  1.00  0.00           H  
+HETATM   12  H6x UNK A   1       1.573  -0.884   0.263  1.00  0.00           H  
+HETATM   13  H7x UNK A   1       1.739   0.364  -0.970  1.00  0.00           H  
+HETATM   14  H8x UNK A   1       2.843   1.669   0.558  1.00  0.00           H  
+TER      15      UNK A   1
+ENDMDL
+CONECT    1    2    3    7    8
+CONECT    2    1    9
+CONECT    3    1    4    5   10
+CONECT    4    3   11
+CONECT    5    3    6   12   13
+CONECT    6    5   14
+CONECT    7    1
+CONECT    8    1
+CONECT    9    2
+CONECT   10    3
+CONECT   11    4
+CONECT   12    5
+CONECT   13    5
+CONECT   14    6
+END

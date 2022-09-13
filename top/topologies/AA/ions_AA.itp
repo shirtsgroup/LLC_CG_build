@@ -1,0 +1,7 @@
+[ moleculetype ]
+; Name	nrexcl
+Br-	1
+
+[ atoms ]
+;num, type, resnum, resname, atomname, cgnr, q, m
+     1 Br1                     0 UNK      Br1           1        -1.00000000        79.90410000
