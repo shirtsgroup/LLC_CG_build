@@ -3,7 +3,7 @@ Building new polymers
 
 AA parameterization
 -------------------
-Use the Jupyter create_monomer.ipynb to create the all-atom
+Use the Jupyter notebook `create_monomer.ipynb` to create the all-atom
 parameterization.  It requires several packages to be installed (which
 are described at the top of the script).
 
